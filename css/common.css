@@ -136,6 +136,15 @@ h4 {
 	border:0.05rem solid #E4022C;
     display: inline-block;
 }
+.bar.bar-nav {
+	padding-left: 0;
+	padding-right: 0;
+	background-color:#FFFFFF;
+	height: 3rem;
+}
+.bar.bar-nav~.content {
+    top: 3rem;
+}
 /***重写sm end***/
 
 /**animate**/
