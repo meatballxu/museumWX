@@ -314,7 +314,7 @@ body {
 	color: #000;
 	background: #eee;
 	overflow: hidden;
-	font-weight: 200
+	font-weight: 300
 }
 
 a,
@@ -1293,7 +1293,7 @@ a {
 }
 
 .badge {
-    padding: 0.15rem 0.5rem;
+    padding: 0.2rem 0.5rem 0.08rem;
 	line-height: 1;
 	color: #FFFFFF;
 	background-color: #E97E06;

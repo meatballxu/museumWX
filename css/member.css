@@ -70,7 +70,7 @@
 .page-form .list-block .item-content,.page-form .list-block .item-inner {
     min-height: 2.275rem;
 }
-.page-form .list-block .item-inner:after {
+.page-form .list-block .item-inner:after,.page-form .list-block ul:after {
 	content: none;
 }
 .page-form .list-block .item-title.label {
@@ -130,3 +130,38 @@
 /**page 3**/
 
 /**page 4**/
+
+@media only screen and (max-height: 550px) {
+	.swiper-container-horizontal>.swiper-pagination-bullets{
+	    bottom: 5.6rem;
+	}
+	.img1-1 {
+		top: 4.2rem;
+	}
+	.img1-2 {
+		top: 12.5rem;
+	}
+	.text1-1 {
+		top: 15.8rem;
+	}
+	.joinMember {
+		bottom: 2.5rem;
+		}
+	.recruitment .page-2 h1, .recruitment .page-3 h1, .recruitment .page-4 h1 {
+		top: 5rem;
+	}
+	.text2-1, .text3-1, .text4-1 {
+		top: 7rem;
+	}
+	.recruitment h1 {
+    		margin-top: 4rem;
+    }
+    .recruitment h4 {
+	    margin-top: 1.5rem;
+	    margin-bottom: 1rem;
+	}
+}
+.modal-button.active-state, html:not(.watch-active-state) .modal-button:active {
+    background: #E4022C;
+    color: #FFFFFF;
+}
