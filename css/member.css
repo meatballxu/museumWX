@@ -70,7 +70,8 @@
 .page-form .list-block .item-content,.page-form .list-block .item-inner {
     min-height: 2.275rem;
 }
-.page-form .list-block .item-inner:after,.page-form .list-block ul:after {
+.page-form .list-block .item-inner:after,.page-form .list-block ul:after,
+.page-form .list-block ul:before {
 	content: none;
 }
 .page-form .list-block .item-title.label {
