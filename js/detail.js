@@ -9,7 +9,7 @@ $(".educationIndex .detailBox img,.educationIndex .detailBox .topic").click(func
 	window.location.href = $(this).closest(".detailBox").attr("data-tar");
 });
 
-$(".ckMore").click(function(){
+$(".ckMore:not(.cklist)").click(function(){
 	var $ck = $(this);
 	if($ck.hasClass("on")) {
 		$ck.removeClass("on");
@@ -17,7 +17,13 @@ $(".ckMore").click(function(){
 		$ck.closest(".moreContent").find("div:first-child").addClass("default");
 	}else {
 		$ck.addClass("on");
-		$ck.closest(".moreContent").find("div:first-child").removeClass("default");
+		$ck.closest(".newsText").find("p").removeClass("default");
+		$ck.closest(".moreContent").find("div.moreText").removeClass("default");
 	}
 	
+});
+
+$(".cklist").click(function(){
+	$(this).toggleClass("on");
+	$(".personlist").toggle();
 });

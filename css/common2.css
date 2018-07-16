@@ -144,8 +144,8 @@ h1 {
 .f18{
 	font-size:0.9rem;
 }
-.f20{
-	font-size:1rem;
+.f14{
+	font-size:0.6rem!important;
 }
 .fl{
 	float:left;
@@ -155,6 +155,9 @@ h1 {
 }
 .tMain {
 	color: #1A1A1A!important;
+}
+.tWhite {
+	color: #FFFFFF!important;
 }
 .tGrey {
 	color: #999999;
