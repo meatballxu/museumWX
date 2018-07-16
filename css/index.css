@@ -1,0 +1,212 @@
+html,body {
+	height: 100%;
+	overflow: hidden;
+}
+.index-page-2 {
+	height: calc(100% - 2.7rem);
+	margin-top: 2.7rem;
+}
+.index-imgBg {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+.index-imgBg.ba1 {
+	background-image: url(../img/index/ba1.jpg);
+}
+.index-imgBg.ba2 {
+	background-color: #414141;
+	background-image: url(../img/index/ba2.jpg);
+}
+.index-imgBg.ba3 {
+	background-color: #613B1C;
+	background-image: url(../img/index/ba3.jpg);
+}
+.index-imgBg.ba4 {
+	background-color: #DDD7BF;
+	background-image: url(../img/index/ba4.jpg);
+}
+.index-imgBg.ba5 {
+	background-color: #8D8D8D;
+	background-image: url(../img/index/ba5.jpg);
+}
+.slide-1 {
+	
+}
+.slide-2 {
+	
+}
+.slide-3 {
+	
+}
+.slide-4 {
+	
+}
+.slide-5 {
+	
+}
+.swiper-pagination {
+    right: 50px;
+    top: 50%;
+    margin-top: -50px;
+}
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+.swiper-pagination-bullet-active {
+    background: rgba(255,255,255,0.9);
+}
+.index-bgTxt {
+	position: absolute;
+	z-index: 11;
+	top: 50%;
+	color: #FFFFFF;
+	text-align: center;
+	width: 90%;
+	margin: 0 5%;
+	margin-top: -4rem;
+}
+.index-bgTxt h1 {
+	font-weight:900;
+	letter-spacing: 1px;
+	font-size: 1.2rem;
+	line-height: 1.2;
+	font-family: Arial-Black, "arial black", arial;
+	text-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+}
+.index-bgTxt h2 {
+	font-weight:900;
+	letter-spacing: 1px;
+	font-size: 0.9rem;
+	line-height: 1.8;
+	text-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+}
+.index-bgTxt p {
+	font-size: 0.6rem;
+	line-height: 1.8;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.68);
+}
+.index-bgTxt p span + span:before{
+	content: "";
+	display: inline-block;
+	width: 0.5rem;
+}
+.index-bgTxt .btn {
+	font-size: 0.65rem!important;
+	padding: 0.55rem 2.2rem!important;
+	margin-top: 1.6rem;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.68);
+}
+.index-bgTxt .btn-alpha:hover,
+.index-bgTxt .btn-alpha:active {
+	background: rgba(0,0,0,0.5);
+}
+.index-bgTxt .btn {
+	border-radius: 0;
+}
+
+/*.index-bgTxt.txt1 {
+	right: 100px;
+}
+.index-bgTxt.txt2 {
+	left: 90px;
+}
+.index-bgTxt.txt3 {
+	right: 100px;
+}
+.index-bgTxt.txt4 {
+	left: 100px;
+}
+.index-bgTxt.txt5 {
+	right: 100px;
+}*/
+@-webkit-keyframes arrowDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -120%, 0);
+		transform: translate3d(0, -120%, 0)
+	}
+	35%,100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none
+	}
+}
+@keyframes arrowDown {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, -120%, 0);
+		-ms-transform: translate3d(0, -120%, 0);
+		transform: translate3d(0, -120%, 0)
+	}
+	35%,100% {
+		opacity: 1;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none
+	}
+}
+@-webkit-keyframes arrowUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 100%, 0);
+		transform: translate3d(0, 100%, 0)
+	}
+	35%,100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none
+	}
+}
+@keyframes arrowUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 120%, 0) rotate(180deg);
+		-ms-transform: translate3d(0, 120%, 0) rotate(180deg);
+		transform: translate3d(0, 120%, 0) rotate(180deg)
+	}
+	35%,100% {
+		opacity: 1;
+		-webkit-transform: translate3d(0, 0, 0) rotate(180deg);
+		-ms-transform: translate3d(0, 0, 0) rotate(180deg);
+		transform: translate3d(0, 0, 0) rotate(180deg)
+	}
+}
+.index-nav-arrow-down,
+.index-nav-arrow-up {
+	position: fixed;
+	width: 30px;
+	height: 16px;
+	left: 50%;
+	margin-left: -16px;
+	z-index: 12;
+}
+.index-nav-arrow-down img,
+.index-nav-arrow-up img {
+	height: 100%;
+}
+.index-nav-arrow-down {
+	bottom: 32px;
+}
+.index-nav-arrow-up {
+	top: calc(32px + 2.7rem)  ;
+}
+.index-nav-arrow-up:hover {
+	-webkit-transform: translate3d(0, 0, 0) rotate(180deg);
+	-ms-transform: translate3d(0, 0, 0) rotate(180deg);
+	transform: translate3d(0, 0, 0) rotate(180deg)
+}
+.index-nav-arrow-down.animated {
+	animation:arrowDown 2s infinite;
+	-webkit-animation:arrowDown 2s infinite; 
+}
+.index-nav-arrow-up.animated {
+	animation:arrowUp 2s infinite;
+	-webkit-animation:arrowUp 2s infinite; 
+}

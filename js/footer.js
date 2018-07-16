@@ -1,0 +1,27 @@
+//将导航HTML写入页面，请将链接补全
+document.writeln("<footer>");
+document.writeln("	<div class=\'main-container\'>");
+document.writeln("		<dl>");
+document.writeln("			<dt><a href=\'#\'>关于XPM</a></dt>");
+document.writeln("			<dt><a href=\'#\'>视频宣传</a></dt>");
+document.writeln("			<dt><a href=\'#\'>联系我们</a></dt>");
+document.writeln("			<dd><a href=\'#\'>关注我们</a></dd>");
+document.writeln("		</dl>");
+document.writeln("		<div class=\'logo\'>");
+document.writeln("			<a class=\'blogo\' href=\'https://weixin.qq.com/\'><img src=\'../img/blogo4-on.png\' /></a>");
+document.writeln("			<a class=\'blogo\' href=\'https://weibo.com/\'><img src=\'../img/blogo3-on.png\' /></a>");
+document.writeln("			<a class=\'blogo\' href=\'http://www.youku.com/\'><img src=\'../img/blogo1-on.png\' /></a>");
+document.writeln("			<a class=\'blogo\' href=\'https://www.toutiao.com/\'><img src=\'../img/blogo2-on.png\' /></a>");
+document.writeln("		</div>");
+document.writeln("		<div class=\'tGrey\'>XPM地址: 湖南省长沙岳麓区洋湖街道潇湘南路一段387号</div>");
+document.writeln("		<div class=\'tGrey\'>XPM邮箱: xzlmuseum@163.com</div>");
+document.writeln("		<div class=\'tGrey\'>联系电话: 0731- 88991518</div>");
+document.writeln("		<div class=\'tGrey mt10\'>湘ICP备18007140号.</div>");
+document.writeln("		");
+document.writeln("		<div class=\'orcode\'>");
+document.writeln("			<div><img src=\'../img/login/orcode.jpg\' /></div>");
+document.writeln("			<h4></h4>");
+document.writeln("		</div>");
+document.writeln("		<div class=\'logo-xzl\'></div>");
+document.writeln("	</div>");
+document.writeln("</footer>");

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+	<html lang="zh-CN">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>谢子龙影像艺术馆</title>
+		
+		<link rel="stylesheet" href="js/swiper/swiper.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/common2.css">
+	</head>
+	<body>
+		
+		<div class="main-menu transparent"><!--登录状态  未登录：logout  | 已登录：login -->
+			<div class="logo"></div>
+			<div class="opline">
+				<a class="lan cn" href="javascript:"><span class="lan-en">EN</span><span class="lan-cn">CN</span></a>
+				<span></span>
+				<a class="search-btn" href="javascript:"><i class="iconfont icon-chazhao"></i></a>
+				<a class="login userhead" href="#"><img src="img/ep/head.jpg" /></a>
+				<a class="more" href="javascript:"><i class="iconfont icon-gengduocaidan"></i></a>
+			</div>
+			<div class="overlay ma10" style="display: none;"></div>
+			<div class="item ma10">
+				<a href="#">参观</a>
+				<a href="#">展览</a>
+				<a href="#">学术</a>
+				<a href="#">公共项目</a>
+				<a href="#">艺术商店</a>
+				<a href="#">会员</a>
+				<a href="#">X-Space</a>
+				<a href="#">资讯</a>
+				<a href="#">关于XPM</a>
+				<a class="logstate" href="#"><span class="logout">登录</span><span class="login">退出登录</span></a>
+			</div>
+			<div class="searchBox" style="display: none;">
+				<div class="search">
+					<input class="keywords" type="text" placeholder="您想搜索什么？" />
+					<a class="btn" href="#">搜 索</a>
+				</div>
+			</div>
+		</div>
+		<div style="height: 200%;"></div>
+		<script type='text/javascript' src='js/jquery-3.3.1.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='js/bootstrap.min.js' charset='utf-8'></script>
+		<script>
+			$(".main-menu .more").click(function(){
+				if(!$(".main-menu").hasClass("open")){
+					closeSearch();
+					openMenu();
+				}else closeMenu();
+			});
+			$(".main-menu .search-btn").click(function(){
+				if(!$(".main-menu .searchBox").is(':visible')){
+					closeMenu();
+					openSearch();
+				}else {
+					closeSearch();
+				}
+			});
+			$(".main-menu .overlay").click(function(){
+				closeMenu();closeSearch();
+			});
+			function openMenu(){
+				$(".main-menu").removeClass("fix").addClass("open");
+				$(".overlay").show();
+			}
+			function closeMenu(){
+				var topVal = 0;    
+				if(window.pageYOffset){
+					topVal = window.pageYOffset;
+				}else if(document.documentElement.scrollTop ){
+					topVal = document.documentElement.scrollTop;
+				}    
+				else if(document.body.scrolltop){
+					topVal = document.body.scrolltop;
+				}
+				if(topVal > 150){
+					$(".main-menu").addClass("fix");
+				}
+				$(".main-menu").removeClass("open");
+				$(".overlay").hide();
+			}
+			function openSearch(){
+				$(".main-menu").removeClass("fix");
+				$(".main-menu .searchBox,.main-menu .overlay").show();
+			}
+			function closeSearch(){
+				closeMenu();
+				$(".main-menu .searchBox,.main-menu .overlay").hide();
+			}
+			$(".lan").click(function(){
+				$(this).toggleClass("cn").toggleClass("en")
+			});
+			
+//固定菜单栏
+var divOffsetTop = 150;
+window.onscroll=function(){
+	// 计算页面滚动了多少（需要区分不同浏览器）    
+	var topVal = 0;    
+	if(window.pageYOffset){//这一条滤去了大部分， 只留了IE678    
+		topVal = window.pageYOffset;
+	}
+	else if(document.documentElement.scrollTop ){//IE678 的非quirk模式    
+		topVal = document.documentElement.scrollTop;
+	}    
+	else if(document.body.scrolltop){//IE678 的quirk模式    
+		topVal = document.body.scrolltop;
+	}
+	if(topVal <= divOffsetTop){    
+		$(".main-menu.fix").removeClass("fix");
+	}    
+	else {
+		if($(".main-menu").hasClass("open")){
+			closeMenu();
+		}
+		if($(".main-menu .searchBox").is(':visible')){
+			closeSearch();
+		}
+		$(".main-menu").addClass("fix");
+	}    
+};
+		</script>
+	</body>
+</html>

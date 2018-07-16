@@ -1,0 +1,72 @@
+
+.searchResult .small-container > h1.mt50:first-child {
+	margin-top: 0;
+	padding-top: 50px;
+}
+.searchResult h1 {
+	color: #1A1A1A;
+	font-weight: bold;
+}
+.resultList {
+	margin-bottom: 0.75rem;
+}
+.resultList .result {
+	font-size: 0.54rem;
+	overflow: auto;
+	padding-bottom: 0.75rem;
+	padding-top: 0.75rem;
+}
+.resultList .result+.result {
+	border-top: 0.025rem #DFDFDF dotted;
+}
+.result .imgbox,
+.result .content {
+	float: left;
+	height: 4.15rem;
+}
+.result .imgbox {
+	width: 6.35rem;
+	margin-right: 0.35rem;
+	border-radius: 0.15rem;
+	overflow: hidden;
+}
+.result .imgbox .img {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.result .content {
+	width: calc(100% - 6.7rem);
+}
+.resultList dl {
+	width: 100%;
+	font-size: 0.54rem;
+    margin-top: -0.1rem;
+} 
+.resultList dl dt {
+	font-size: 0.58rem;
+	color: #4A4A4A;
+	font-weight: 500;
+}
+.resultList dl dt:only-child {
+	margin-top: 35px;
+	margin-bottom: 0;
+}
+.resultList dl dd {
+	line-height: 1.5;
+	width: 100%;
+	overflow: hidden;
+	color: #4A4A4A;
+}
+.resultList dl dd:nth-child(2) {
+	margin-top: -0.1rem;
+}
+.resultList dd p {
+	height: 1.7rem;
+	padding-top: 0.2rem;
+}
+.resultList dd p {
+	width: 100%;
+}

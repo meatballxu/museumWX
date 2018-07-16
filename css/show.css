@@ -1,0 +1,542 @@
+.showlist {
+	position: relative;
+}
+.showlist .chapter {
+    margin-bottom: 0;
+}
+.showlist .topic {
+	height: 3rem;
+}
+.showlist .topic h1 {
+	font-family: Arial-Black, "arial black", arial;
+	font-size: 0.9rem;
+    width: 100%;
+     padding-top: 1rem;
+    padding-left: 1.5rem;
+    height: 3rem;
+	font-weight: bold;
+}
+.showlist .chapter {
+	padding: 0;
+	margin-left: -0.375rem;
+	margin-right: -0.375rem;
+}
+/*.showlist .chapter .Exhibitions:nth-child(4n+1),*/
+/*.showlist .chapter .Exhibitions:first-child,*/
+.showlist .chapter .store:first-child {
+	margin-left: 409px;
+}
+/*.showlist .chapter .Exhibitions:nth-child(4n) {
+	margin-right: 409px;
+}*/
+.showlist .Exhibitions,
+.showlist .store {
+	width: 50%;
+	display: inline-block;
+	padding: 0 0.375rem;
+	margin-bottom: 1.2rem;
+	vertical-align: top;
+}
+.chapter dl,
+.Exhibitions dl {
+	cursor: pointer;
+}
+.showlist dt {
+	background: #1A1A1A;
+	color: #FFFFFF;
+	height: 43px;
+	line-height: 43px;
+	padding: 0 20px;
+}
+.showlist dt b {
+	font-size: 20px;
+	font-weight: normal;
+	margin-right: 10px;
+}
+.showlist dt span {
+	font-size: 14px;
+	font-weight: normal;
+}
+.showlist dd img {
+	width: 100%;
+}
+.showlist dd.tMain {
+	font-size: 0.7rem;
+	margin-top: 0.5rem;
+}
+.showlist dd.tGrey {
+	font-size: 0.56rem;
+	margin-top: 0.15rem;
+}
+.showlist dd {
+	position: relative;
+	overflow: hidden;
+}
+.showlist dd .bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	color: #FFFFFF;
+	bottom: -100%;
+	left: 0;
+	background-color: rgba(0,0,0,.8);
+}
+.showlist dd .bg p {
+	margin-top: 180px;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+.showlist dd .bg p ,
+.showlist dd .bg small {
+	padding: 0 30px;
+}
+.scrollBox {
+	border-top: 1px solid #EBEBEB;
+	padding: 100px 40px;
+	position: relative;
+}
+.scrollBox > a {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	top: 50%;
+	height: 40px;
+	width: 30px;
+	margin-top: -20px;
+	text-align: center;
+	line-height: 40px;
+}
+.scrollBox > a:nth-child(1) {
+	position: absolute;
+	left: 0;
+}
+.scrollBox > a:nth-child(2) {
+	position: absolute;
+	right: 0;
+}
+.swiper-container {
+	height: 145px;
+}
+.scrollBox img,
+.scrollBox .img,
+.scrollBox p,
+.scrollBox b  {
+	display: inline-block;
+	float: left;
+}
+.scrollBox img,
+.scrollBox .img {
+	width: 145px;
+	height: 145px;
+	background: #FFFFFF;
+	border: 1px solid #D8D8D8;
+}
+.scrollBox .img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.scrollBox p,
+.scrollBox b  {
+	width: 165px;
+	padding-left: 30px;
+}
+.scrollBox b  {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.scrollBox .swiper-slide a {
+	display: block;
+	height: 145px;
+    width: 310px;
+}
+.scrollBox .swiper-slide:nth-child(3n+1) a {
+	margin-left: 1px;
+}
+.scrollBox .swiper-slide:nth-child(3n+2) a {
+	margin: 0 auto;
+}
+.scrollBox .swiper-slide:nth-child(3n) a {
+	float: right;
+}
+.showlist h2 {
+	position: absolute;
+	top: 2.8rem;
+	padding-left: 1.5rem;
+	width: 5.2rem;
+	line-height: 1.1rem;
+	font-size: 0.7rem;
+}
+.past .showlist:first-child h2 {
+	top: 3.75rem;
+}
+.past .showlist:not(:first-child) .topic {
+	height: 0.2rem;
+}
+/*.past .topic {
+	position: relative;
+	width: 379.95px;
+     height: 788px;
+    display: inline-block;
+    float: left;
+}*/
+#past {
+      overflow-y: auto;
+    overflow-x: hidden;
+}
+.past .detailBox {
+	float: left;
+}
+.past .showlist {
+	float: left;
+}
+.past .showlist .chapter {
+	float: left;
+}
+.past .showlist .Exhibitions:first-child {
+	margin-left: 50%;
+}
+/*
+.past .showlist .chapter .Exhibitions:nth-child(4n+1) {
+    margin-left: 0;
+}
+.past .showlist:nth-child(2n+1) .Exhibitions:nth-child(2n+1) {
+	margin-left: 409px;
+}
+.past .showlist:nth-child(2n) .Exhibitions:nth-child(2n) {
+	margin-right: 409px;
+}
+.past .showlist:nth-child(2n) h2 {
+	right: 80px;
+	left: auto;
+}
+.past .showlist:nth-child(2n) .topic {
+	width: 100%;
+}
+.past .showlist .Exhibitions:nth-child(4n+1) {
+    margin-left: 0;
+}
+.past .showlist .Exhibitions:nth-child(4n) {
+    margin-right: 0;
+}
+.past .showlist:nth-child(2n+1) .Exhibitions:nth-child(2n+1) {
+	margin-left: 409px;
+}
+.past .showlist:nth-child(2n) .Exhibitions:nth-child(2n) {
+	margin-right: 409px;
+}*/
+
+.listPage h1.title {
+	font-size: 48px;
+	margin-top: 60px;
+	margin-bottom: 50px;
+	font-weight: bold;
+}
+.listPage h1.title+p {
+	line-height: 22px;
+}
+
+.storeList .store {
+	vertical-align: top;
+}
+.storeList .showlist dd img {
+	width: 379.95px;
+	height: 379.95px;
+}
+.storeList dd.name {
+	padding: 15px 0 10px;
+	font-size: 18px;
+} 
+.storeList dd.info {
+	font-size: 12px;
+} 
+.storeList dd.price {
+	padding-top: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #E4022C;
+} 
+.storeList dd.info p+p {
+	margin-top: 20px;
+}
+.storeList dd.info span {
+	display: block;
+}
+
+.storeInfo .newsTop {
+    height: 548px;
+}
+.storeInfo .newsTop>img {
+	width: 480px;
+	height: 480px;
+}
+.storeInfo .newsTop h1, 
+.storeInfo .newsTop h2,
+.storeInfo .newsTop .showinfo {
+    width: 680px;
+}
+.storeInfo .showinfo:after {
+    width: 580px;
+}
+.storeInfo .newsTop .showinfo {
+    min-height: 80px;
+}
+.storeInfo .newsTop .orcode {
+    /*left: 580px;*/
+    }
+    
+.storeInfo .detailBox > .intro {
+	position: relative;
+	padding: 50px 0;
+}
+.storeInfo .detailBox > .intro img {
+	max-width: 100%;
+}
+.storeInfo .detailBox > .intro:before,
+.storeInfo .detailBox > .intro:after  {
+	content: "";
+	position: absolute;
+	display: block;
+	height: 6px;
+	width: 90px;
+	background: #1A1A1A;
+}
+.storeInfo .detailBox > .intro:before  {
+	left: 0;
+	top: 0;
+}
+.storeInfo .detailBox > .intro:after  {
+	right: 0;
+	bottom: 0;
+}
+.storeInfo .detailBox > .intro >p {
+	text-align: center;
+}
+.storeInfo .detailBox > .intro >p+p {
+	margin-top: 66px;
+}
+.educationIndex {
+	position: relative;
+}
+.educationIndex .topic {
+     top: 40px;
+     height: 440px;
+	
+}
+.educationIndex .chapter {
+	padding: 40px 0;
+}
+.educationIndex .detailBox+.detailBox {
+	border-top: 1px dashed #E7E7E7;
+}
+.past .showlist:nth-child(2n+1) .education {
+    margin-left: 250px;
+}
+.educationIndex .showlist .chapter {
+     margin-left: 0; 
+     margin-right: 0; 
+}
+.educationIndex .showlist h2,
+.educationIndex .showlist:first-child h2  {
+	font-size: 24px;
+	top: 210px;
+}
+.educationIndex .showlist h1 {
+	font-size: 54px;
+	width: auto;
+     padding-top: 60px;
+}
+.educationIndex .showlist:nth-child(2n+1) h2 {
+     left: 0; 
+}
+.educationIndex .showlist:nth-child(2n) h1 {
+	right: 0;
+    left: auto;
+    position: absolute;
+	text-align: right;
+}
+.educationIndex .showlist:nth-child(2n) h2 {
+	right: 0;
+    text-align: right;
+    left: auto;
+}
+.educationIndex .showlist .topic,
+.educationIndex .showlist {
+	width: 1200px;	
+}
+
+.education img {
+	width: 950px;
+}
+.educationIndex .showlist h2:after {
+	position: absolute;
+	content: "";
+	height: 6px;
+	top: 22px;
+	background: #1A1A1A;
+	width: 110px;
+	right: -50px;
+}
+.educationIndex .showlist:nth-child(2n) h2:after {
+	left: -35px;
+}
+.educationIndex .education,
+.educationIndex .topic {
+	cursor: pointer;
+}
+.educationIndex .detailBox h1,
+.educationIndex .detailBox h2,
+.educationIndex .detailBox h2:after,
+.educationIndex .detailBox img  {
+	-webkit-transition:all .5s;
+	transition:all .5s;
+}
+.educationIndex .detailBox:hover h1,
+.educationIndex .detailBox:hover h2 {
+	color: #DBAD3D;
+	transform: translateX(-5px);
+}
+.educationIndex .detailBox:hover h2:after {
+	background: #DBAD3D;
+}
+.educationIndex .detailBox:hover img {
+	box-shadow: 0 5px 20px rgba(0,0,0,.5);
+}
+.academicIndex .showlist:nth-child(2n+1) h2 {
+	top: 160px;
+}
+.educationIndex ul.sec{
+	height: 430px;
+	float: left;
+	width: 1200px;
+	text-align: center;
+	margin-top: 10px;
+}
+.educationIndex ul.sec li {
+	width: 250px;
+	height: 430px;
+	display: inline-block;
+	background-color: #EEEEEE;
+	margin: 0 18px;
+	position: relative;
+     vertical-align: top;
+     overflow: hidden;
+}
+.educationIndex ul.sec img {
+	width: 100%;
+	height: 100%;
+}
+.educationIndex ul.sec .tit {
+	width: 34px;
+	position: absolute;
+	height: 280px;
+	top: 0;
+	right: 0;
+	padding: 18px 7px;
+	background: #1A1A1A;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 13px;
+}
+.educationIndex .tit span {
+}
+.educationIndex .tit span:after {
+	content: "•";
+	display: block;
+}
+.educationIndex .tit small {
+	display: block;
+	width: 145px;
+	text-align: left;
+	transform:  rotate(90deg) translateX(22px);
+	transform-origin: 20px 0;
+	-webkit-transform-origin: 20px 0;
+}
+.educationIndex ul.sec {
+	margin-bottom: 40px;
+}
+.educationIndex ul.sec .focus {
+    position: absolute;
+    margin-left: 0;
+    left: 10px;
+    bottom: 10px;
+	border-radius: 100px;
+    border: none;
+    background: #1A1A1A;
+	-webkit-transition:all .5s;
+	transition:all .5s;
+}
+ ul.sec .focus.on {
+ 	background: #E4022C;
+ }
+ ul.sec .focus:hover a {
+ 	color: #E4022C;
+ }
+ul.sec .focus a {
+	color: #FFFFFF;
+}
+ ul.sec .focus.on a {
+	color: #FFFFFF;
+}
+ul.sec .focus a i.icon-shoucang,
+ul.sec .focus.on a i.icon-shoucang {
+	display: inline-block;
+}
+.academicIndex .detailBox:hover img {
+    box-shadow: none;
+}
+.academicIndex ul.sec li:hover {
+	-webkit-transition:all .5s;
+	transition:all .5s;
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
+}
+.academicIndex ul.sec li:hover img {
+	-webkit-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);
+}
+.academicList .chapter .Exhibitions:nth-child(4n+1) {
+	margin-left: 0;
+}
+.academicList .Exhibitions dd {
+	overflow: hidden;
+}
+.academicList .Exhibitions dd img {
+	-webkit-transition:all .5s;
+	transition:all .5s;
+}
+.academicList .Exhibitions dd:hover img {
+	-webkit-transform: scale(1.01) translateY(5px);
+	transform: scale(1.01) translateY(5px);
+}
+.academicList .Exhibitions dd:first-of-type {
+	background: #E9E9E9;
+	border: 1px solid #EBEBEB;
+}
+.publicationList .showlist dd img {
+	max-height: 379.95px;
+}
+.storeOr {
+	width: 320px;
+	padding-left: 160px;
+	float: right;
+	text-align: right;
+}
+.storeOr dt{
+	font-size: 20px;
+color: #999999;
+margin-top: 10px;
+}
+.storeOr b{
+	font-size: 12px;
+}
+.storeOr img {
+	width: 63px;
+	height: 63px;
+	margin: 0 auto;
+	display: inline-block;
+}
+.storeOr div {
+	text-align: right;
+	float: right;
+	width: 70px;
+}

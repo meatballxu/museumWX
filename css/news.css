@@ -12,12 +12,6 @@
 .newsList .list-block ul:after {
 	 content: none;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-	.newsList .list-block ul li:after {
-	    -webkit-transform: scaleY(0.5);
-	    transform: scaleY(0.5);
-	}
-}
 .newsList .list-block ul li:after {
     content: '';
     position: absolute;
