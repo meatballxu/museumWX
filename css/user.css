@@ -1,0 +1,137 @@
+.small-container > h1 {
+	margin-top: 3.75rem;
+	font-size: 1rem;
+}
+.userInfo {
+	height: 2.05rem;
+	margin: 1rem 0;
+}
+.userInfo h1,
+.userInfo p {
+	float: left;
+	width: calc(100% - 85px);
+}
+.userInfo h1 {
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-bottom: 0.2rem;
+}
+.userInfo p {
+	font-size: 12px;
+}
+.userInfo p span {
+	padding-left: 2px;
+}
+.userInfo .header {
+	width: 2.025rem;
+	height:  2.025rem;
+	float: right;
+	position: relative;
+	overflow: hidden;
+	border-radius: 100%;
+}
+.userInfo .header img {
+	width: 100%;
+}
+.userInfo .header a {
+	font-size: 12px;
+	color: #FFFFFF;
+	position: absolute;
+	bottom: 0;
+	display: block;
+	background: rgba(0,0,0,0.55);
+	width: 100%;
+	text-align: center;
+	padding: 5px 0 10px;
+	line-height: 1;
+}
+.userInfo .header:hover a {
+	padding: 33px 0 36px;
+	color: #DBAD3D;
+	background: rgba(0,0,0,0.8);
+}
+#vip h1 {
+	font-size: 0.7rem;
+	font-weight: bold;
+	margin: 0.875rem 0 0.625rem;
+}
+#vip>div {
+	padding-bottom: 0.875rem;
+}
+.userico {
+	display: inline-block;
+	height: 0.7rem;
+	width: 0.7rem;
+	margin-right: 0.35rem;
+}
+.userico.ico1 {
+	background: url(../img/vip/usericon1.jpg) center no-repeat;
+	background-size: contain;
+}
+.userico.ico2 {
+	background: url(../img/vip/usericon2.jpg) center no-repeat;
+	background-size: contain;
+}
+.userico.ico3 {
+	background: url(../img/vip/usericon3.jpg) center no-repeat;
+	background-size: contain;
+}
+.tab-content p {
+	line-height: 1.8;
+}
+#setting h1 {
+	font-size: 20px;
+	font-weight: bold;
+}
+#setting label {
+	font-size: 12px;
+	font-weight: normal;
+	display: block;
+	margin-top: 20px;
+}
+#setting input {
+	border: 1px solid #EBEBEB;
+	height: 41px;
+	width: 417px;
+	padding: 0 6px;
+}
+.btn-red {
+	border-radius: 0;
+	font-size: 12px;
+}
+.header-uploader {
+	width: 350px;
+	height: 390px;
+	position: fixed;
+	z-index: 10;
+	left: 50%;
+	top: 50%;
+	margin: -195px 0 0 -175px;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+.upIcon {
+	display: inline-block;
+	height: 38px;
+	width: 38px;
+	line-height: 37px;
+	font-size: 20px;
+	color: #FFFFFF;
+	background: #D8D8D8;
+	border-radius: 100%;
+	text-align: center;
+}
+
+.header-uploader img {
+	margin: 48px auto 42px 42px;
+	width: 168px;
+	height: 168px;
+	border-radius: 100%;
+}
+.header-uploader .text-center {
+	margin-bottom: 38px;
+}
+.header-uploader .btn-black {
+	width: 302px;
+	border-radius: 0;
+}

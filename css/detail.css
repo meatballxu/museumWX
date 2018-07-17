@@ -116,10 +116,10 @@
 .chapter1 .text>h2,
 .chapter1 .text>p {
 	display: inline-block;
-	width: 546px;
+	width: 100%;
 }
 .chapter1 .text h1 {
-	font-size: 48px;
+	font-size: 1.2rem;
 	margin-bottom: 10px;
 }
 .chapter1 .text h2 {
@@ -176,9 +176,8 @@
 	right: 0;
 }
 .chapter .timg {
-	width: 50%;
-	display: inline-block;
-	margin-bottom: 50px;
+	width: 100%;
+	margin-bottom: 1.25rem;
 }
 .chapter .timg img {
 	width: 95%;
@@ -308,22 +307,23 @@
 	left: 0;
 }
 .chapter4 h3 {
-	font-size: 20px;
+	font-size: 0.5rem;
 	font-weight: bold;
-	margin-top: -56px;
-	height: 30px;
-	margin-bottom: 50px;
+	margin-top: -2rem;
+	height: 0.75rem;
+	margin-bottom: 1.25rem;
 }
 .chapter4:first-child {
 	padding-top: 80px;
 }
 .chapter4 b {
-	font-size: 48px;
+	font-size: 1.5rem;
 	font-weight: normal;
 	color: #EBEBEB;
 	display: block;
 }
 .chapter4 .timg {
+	    padding: 0 0.75rem;
 	vertical-align: bottom;
 }
 .chapter4 h3 {
@@ -332,19 +332,22 @@
 }
 .chapter4 h3[class^="ico"]:before {
 	content: "";
-	height: 24px;
-	width: 24px;
+	height: 0.75rem;
+	width: 0.75rem;
 	left: 0px;
 	position: absolute;
 }
 .chapter4 h3.ico1:before {
-	background: url(../img/usericon.png) no-repeat 0 -46px;
+	background: url(../img/vip/usericon1.jpg) no-repeat center;
+	background-size: contain;
 }
 .chapter4 h3.ico2:before {
-	background: url(../img/usericon.png) no-repeat 0 -2px;
+	background: url(../img/vip/usericon2.jpg) no-repeat center;
+	background-size: contain;
 }
 .chapter4 h3.ico3:before {
-	background: url(../img/usericon.png) no-repeat 0 -88px;
+	background: url(../img/vip/usericon3.jpg) no-repeat center;
+	background-size: contain;
 }
 .registerForm li.on {
 	border-left-color: #E4022C;
@@ -901,4 +904,22 @@ line-height: 24px;
 	color: #5A5A5A;
 	font-size: 0.54rem;
 	line-height: 1.5;
+}
+
+.membership .chapter4 .timg {
+	padding: 0 0.75rem;
+     margin-bottom: 0.5rem;
+}
+.membership .chapter4:first-child {
+    padding-top: 1.5rem;
+}
+.membership .chapter .timg img {
+    width: 100%;
+}
+.membership .chapter4 h3 {
+	font-size: 0.7rem;
+	padding-left: 1.1rem;
+}
+#btn-join {
+	width: calc(100% - 1.5rem);
 }

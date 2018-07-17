@@ -1,4 +1,4 @@
-
+var tagInitial = 0;
 function switchShow(tabs,content,$obj) {
 	if(!$obj.hasClass("on")) {
 		$(tabs).removeClass("on");
@@ -6,6 +6,9 @@ function switchShow(tabs,content,$obj) {
 		$(content+" > .ct").hide();
 		$("#"+$obj.attr("data-tar")).fadeIn();
 	}
+//	if($obj.closest(".tabs-nav").hasClass("fix")) {
+//		$('body').scrollTop(tagInitial)
+//	}
 }
 $(".switchBar a").click(function(){
 	if(!$(this).hasClass("on")) {
@@ -29,7 +32,7 @@ function initTab() {
 	$(".tabs-nav li a").click(closeTab);
 	var tabTop = $(".tabs-nav").offset().top;
 	//固定菜单栏
-	var divOffsetTop = 120;
+	var divOffsetTop = 100;
 	window.onscroll=function(){
 		// 计算页面滚动了多少（需要区分不同浏览器）    
 		var topVal = 0;    
@@ -41,6 +44,7 @@ function initTab() {
 		}    
 		else {
 			$(".tabs-nav").addClass("fix");
+			if(tagInitial==0) tagInitial = topVal;
 		}
 		if(topVal <= divOffsetTop){    
 			$(".main-menu.fix").removeClass("fix");

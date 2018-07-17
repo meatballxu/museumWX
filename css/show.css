@@ -1,3 +1,9 @@
+b {
+	font-weight: 500;
+}
+p {
+	line-height: 1.5;
+}
 .showlist {
 	position: relative;
 }
@@ -6,6 +12,9 @@
 }
 .showlist .topic {
 	height: 3rem;
+}
+.storeList.listPage p {
+	line-height: 1.8;
 }
 .showlist .topic h1 {
 	font-family: Arial-Black, "arial black", arial;
@@ -23,9 +32,9 @@
 }
 /*.showlist .chapter .Exhibitions:nth-child(4n+1),*/
 /*.showlist .chapter .Exhibitions:first-child,*/
-.showlist .chapter .store:first-child {
-	margin-left: 409px;
-}
+/*.showlist .chapter .store:first-child {
+	margin-left: 50%;
+}*/
 /*.showlist .chapter .Exhibitions:nth-child(4n) {
 	margin-right: 409px;
 }*/
@@ -44,12 +53,12 @@
 .showlist dt {
 	background: #1A1A1A;
 	color: #FFFFFF;
-	height: 43px;
-	line-height: 43px;
-	padding: 0 20px;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	padding: 0 0.5rem;
 }
 .showlist dt b {
-	font-size: 20px;
+	font-size: 0.54rem;
 	font-weight: normal;
 	margin-right: 10px;
 }
@@ -89,75 +98,6 @@
 .showlist dd .bg p ,
 .showlist dd .bg small {
 	padding: 0 30px;
-}
-.scrollBox {
-	border-top: 1px solid #EBEBEB;
-	padding: 100px 40px;
-	position: relative;
-}
-.scrollBox > a {
-	display: inline-block;
-	font-size: 14px;
-	font-weight: bold;
-	top: 50%;
-	height: 40px;
-	width: 30px;
-	margin-top: -20px;
-	text-align: center;
-	line-height: 40px;
-}
-.scrollBox > a:nth-child(1) {
-	position: absolute;
-	left: 0;
-}
-.scrollBox > a:nth-child(2) {
-	position: absolute;
-	right: 0;
-}
-.swiper-container {
-	height: 145px;
-}
-.scrollBox img,
-.scrollBox .img,
-.scrollBox p,
-.scrollBox b  {
-	display: inline-block;
-	float: left;
-}
-.scrollBox img,
-.scrollBox .img {
-	width: 145px;
-	height: 145px;
-	background: #FFFFFF;
-	border: 1px solid #D8D8D8;
-}
-.scrollBox .img {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-}
-.scrollBox p,
-.scrollBox b  {
-	width: 165px;
-	padding-left: 30px;
-}
-.scrollBox b  {
-	margin-bottom: 10px;
-	font-size: 18px;
-}
-.scrollBox .swiper-slide a {
-	display: block;
-	height: 145px;
-    width: 310px;
-}
-.scrollBox .swiper-slide:nth-child(3n+1) a {
-	margin-left: 1px;
-}
-.scrollBox .swiper-slide:nth-child(3n+2) a {
-	margin: 0 auto;
-}
-.scrollBox .swiper-slide:nth-child(3n) a {
-	float: right;
 }
 .showlist h2 {
 	position: absolute;
@@ -227,10 +167,10 @@
 }*/
 
 .listPage h1.title {
-	font-size: 1.15rem;
+	font-size: 1rem;
 	margin-top: 0.75rem;
 	margin-bottom: 0.5rem;
-	font-weight: bold;
+	font-weight: 500;
 }
 .listPage h1.title+p {
 	line-height: 22px;
@@ -240,19 +180,15 @@
 	vertical-align: top;
 }
 .storeList .showlist dd img {
-	width: 379.95px;
-	height: 379.95px;
+	width: 100%;
 }
 .storeList dd.name {
-	padding: 15px 0 10px;
-	font-size: 18px;
-} 
-.storeList dd.info {
-	font-size: 12px;
+	padding: 0.5rem 0 0;
+	font-size: 0.6rem;
 } 
 .storeList dd.price {
-	padding-top: 20px;
-	font-size: 18px;
+	padding-top: 0.25rem;
+	font-size: 0.56rem;
 	font-weight: bold;
 	color: #E4022C;
 } 
@@ -264,30 +200,47 @@
 }
 
 .storeInfo .newsTop {
-    height: 548px;
+    overflow: auto;
+    padding-right: 0;
 }
 .storeInfo .newsTop>img {
-	width: 480px;
-	height: 480px;
+	width: 50%;
+	float: left;
 }
 .storeInfo .newsTop h1, 
-.storeInfo .newsTop h2,
+.storeInfo .newsTop h2 {
+    width: calc(50% - 0.75rem);
+	float: left;
+	margin-left: 0.75rem;
+}
 .storeInfo .newsTop .showinfo {
-    width: 680px;
+	float: left;
+	margin-left: 0.75rem;
+}
+.storeInfo .newsTop h1 {
+	margin-top: 0;
+	font-size: 0.7rem;
+}
+.storeInfo .newsTop h2 {
+	margin-bottom:0;
+	font-size: 0.56rem;
+	line-height: 1.4;
 }
 .storeInfo .showinfo:after {
     width: 580px;
 }
 .storeInfo .newsTop .showinfo {
-    min-height: 80px;
+    height: auto;
+    padding-top: 0.75rem;
+    font-weight: 500;
 }
-.storeInfo .newsTop .orcode {
-    /*left: 580px;*/
-    }
+.storeInfo .newsTop .showinfo:after {
+ 	content: none;
+}
     
 .storeInfo .detailBox > .intro {
 	position: relative;
-	padding: 50px 0;
+	padding: 1.25rem 0;
 }
 .storeInfo .detailBox > .intro img {
 	max-width: 100%;
@@ -297,8 +250,8 @@
 	content: "";
 	position: absolute;
 	display: block;
-	height: 6px;
-	width: 90px;
+	height: 0.1rem;
+	width: 1.3rem;
 	background: #1A1A1A;
 }
 .storeInfo .detailBox > .intro:before  {
@@ -313,7 +266,7 @@
 	text-align: center;
 }
 .storeInfo .detailBox > .intro >p+p {
-	margin-top: 66px;
+	margin-top: 1rem;
 }
 .educationIndex {
 	position: relative;
@@ -477,17 +430,25 @@
 	margin-top: 10px;
 	font-weight: normal;
 }
-.storeOr b{
-	font-size: 0.6rem
+.storeOr b {
+	font-size: 0.54rem;
 }
 .storeOr img {
-	width: 63px;
-	height: 63px;
-	margin: 0 auto;
+	width: 100%;
 	display: inline-block;
 }
 .storeOr div {
-	text-align: right;
-	float: right;
-	width: 70px;
+	width: 3rem;
+	display: inline-block;
+	margin-top: 0.5rem;
+	margin-right: 0.3rem;
+	text-align: center;
+}
+.storeList.listPage .topic {
+	height: 2.5rem;
+}
+.storeList.listPage .topic h1 {
+    font-size: 0.78rem;
+    padding-top: 0.8rem;
+    padding-left: 1rem;
 }

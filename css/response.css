@@ -1,7 +1,7 @@
 
 .searchResult .small-container > h1.mt50:first-child {
 	margin-top: 0;
-	padding-top: 50px;
+	padding-top: 4rem;
 }
 .searchResult h1 {
 	color: #1A1A1A;
@@ -71,4 +71,44 @@
 }
 .resultList dd p {
 	width: 100%;
+}
+.small-container .result .imgbox {
+    width: 3rem;
+    height: 3rem;
+}
+.small-container .result .content {
+    width: calc(100% - 3.8rem);
+    height: auto;
+}
+.small-container .result .imgbox, 
+.small-container .result .content {
+	display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+.small-container .resultList dl dt:only-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.small-container .resultList dl dd {
+	height: 2.4rem;
+}
+.resultList dd p {
+    padding-top: 0;
+    line-height: 1.6;
+}
+.resultList dd p:only-child {
+	height: auto;
+}
+.resultList dd p:first-child {
+	padding-top: 0.8rem;
+}
+.resultList dl dt {
+    font-size: 0.6rem;
+}
+.resultList dl dt,
+.resultList dd p:not(:only-child) {
+    overflow: hidden;
+    text-overflow:ellipsis;
+	white-space: nowrap;
 }

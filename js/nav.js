@@ -34,7 +34,7 @@ function setNav(st) {
 		$(".main-menu").addClass("transparent");
 	}
 	//固定菜单栏
-	var divOffsetTop = 120;
+	var divOffsetTop = 100;
 	window.onscroll=function(){
 		// 计算页面滚动了多少（需要区分不同浏览器）    
 		var topVal = 0;    
