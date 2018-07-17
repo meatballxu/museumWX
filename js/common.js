@@ -1,6 +1,5 @@
 
 function switchShow(tabs,content,$obj) {
-	
 	if(!$obj.hasClass("on")) {
 		$(tabs).removeClass("on");
 		$obj.addClass("on");
@@ -15,6 +14,57 @@ $(".switchBar a").click(function(){
 	}
 });
 
+function initTab() {
+	$(".tabs-nav .arrow").bind("click",function(){
+		if(!$(".tabs-nav .arrow").hasClass("on")) {
+			openTab();
+		}else {
+			closeTab();
+		}
+	});
+	$(".tabs-nav li").click(function(){
+		switchShow(".tabs-nav a",".tabs-content",$(this).find("a"));
+		closeTab();
+	})
+	$(".tabs-nav li a").click(closeTab);
+	var tabTop = $(".tabs-nav").offset().top;
+	//固定菜单栏
+	var divOffsetTop = 120;
+	window.onscroll=function(){
+		// 计算页面滚动了多少（需要区分不同浏览器）    
+		var topVal = 0;    
+		if(window.pageYOffset){//这一条滤去了大部分， 只留了IE678    
+			topVal = window.pageYOffset;
+		}
+		if(topVal <= tabTop){    
+			$(".tabs-nav.fix").removeClass("fix");
+		}    
+		else {
+			$(".tabs-nav").addClass("fix");
+		}
+		if(topVal <= divOffsetTop){    
+			$(".main-menu.fix").removeClass("fix");
+		}    
+		else {
+			if($(".main-menu").hasClass("open")){
+				closeMenu();
+			}
+			if($(".main-menu .searchBox").is(':visible')){
+				closeSearch();
+			}
+			$(".main-menu").addClass("fix");
+		}    
+	};
+	
+}
+function closeTab() {
+	$(".tabs-nav .arrow").removeClass("on");
+	$(".tabs-nav ul").hide();
+}
+function openTab() {
+	$(".tabs-nav .arrow").addClass("on");
+	$(".tabs-nav ul").show();
+}
 //闪现泡泡（弹出一秒消失）callPop(状态码,要显示的字符串)
 //状态码说明 0:失败 1:成功 2:
 

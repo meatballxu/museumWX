@@ -90,20 +90,19 @@
 	padding-left: 74px;
 }
 .educationInfo .newsQA {
-	margin-top: -70px;
+	margin-top: -1.5rem;
 }
 .artTop h2 {
     margin-bottom: 20px;
 }
 .artTop .inf {
-	float: left;
-	width: 660px;
-	margin-left: 70px;
-	padding-bottom: 20px;
-	padding-top: 20px;
-	line-height: 1.7;
-	max-height: 270px;
-	overflow: hidden;
+	padding-bottom: 0.5rem;
+    line-height: 1.7;
+    max-height: 270px;
+    overflow: hidden;
+}
+.artTop .inf+.inf {
+	padding-top: 0.5rem;
 }
 .artTop .inf:nth-child(5) {
 	border-bottom: 1px dashed #DFDFDF; ;
@@ -113,81 +112,71 @@
 	font-weight: bold;
 }
 .artTop .or {
-	position: absolute;
-	right: 50px;
-	bottom: 35px;
-	width: auto;
-	min-width: 172px;
-	height: 100px;
+	padding-top: 0.75rem;
+	border-top: 1px dashed #DFDFDF;
 }
 .artTop .or .orcode  {
 	position:static;	
      display: inline-block;
-     margin-left: 10px;
+     margin-right: 0.5rem;
 }
-ul.artFace li {
-	display: inline-block;
-     vertical-align: bottom;
+ul.artFace li:not(:last-child) {
+	margin-bottom: 1rem;
 }
 ul.artFace li:first-child {
-	width: 286px;
-	height: 389px;
-	margin-right: 70px;
-}
-ul.artFace li:last-child {
-	width: 750px;
+	height: 9.75rem;
 }
 ul.artFace li:first-child img {
 	max-height: 100%;
 	max-width: 100%;
 }
 ul.artFace h4 {
-	font-weight: bold;
-	font-size: 18px;
+	font-weight: 500;
+	font-size: 0.6rem;
 	color: #1A1A1A;
-	margin-bottom: 20px;
+	margin-bottom: 0.5rem;
 }
 ul.artFace h4:before {
 	content: "";
 	border-color: #000 transparent transparent  transparent;
-	border-width: 15px 14px  14px 0;
+	border-width: 0.375rem 0.35rem 0.35rem 0;
 	border-style: solid;
     display: inline-block;
     vertical-align: middle;
     width: 0;
     height: 0;
-    margin-right: 4px;
+    margin-right: 0.125rem;
 }
 ul.artFace dt,
 ul.artFace dd {
 	display: inline-block;
 	vertical-align: middle;
+	font-size: 0.54rem;
 }
 ul.artFace dt {
 }
 ul.artFace dt img {
-	width: 54px;
-	height: 54px;
+	width: 1.35rem;
+	height: 1.35rem;
 	border-radius: 100%;
-	margin-right: 15px;
+	margin-right: 0.375rem;
 }
 ul.artFace dd b {
       line-height: 1.8;
 }
 ul.artFace dl {
-	margin-right: 60px;
-	display: inline-block;
+	margin-top: 0.75rem;
 }
 ul.artFace .info {
-	margin-top: 30px;
-	padding-top: 30px;
+	margin-top:  0.75rem;
+	padding-top:  0.75rem;
 	line-height: 1.8;
 	border-top: 1px dashed #DFDFDF;
 }
 .artInfo h5 {
 	font-weight: bold;
-	font-size: 20px;
-	padding: 50px 0 36px;
+	font-size: 0.7rem;
+	padding:  0.75rem 0;
 }
 .artInfo h5 + .newsText {
       padding: 0 0;

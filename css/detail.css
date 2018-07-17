@@ -2,6 +2,9 @@
 	position: relative;
 	height: 120px;
 }
+.topic h1 {
+	text-shadow:0 1px 1px rgba(255,255,255,1), 0 0 2px rgba(255,255,255,1);
+}
 .topic h2,
 .topic h3 {
 	position: absolute;
@@ -476,7 +479,7 @@
 .newsTop h2 {
 	font-size: 0.6rem;
 	font-weight: 500;
-	margin-bottom: 1rem;
+	margin-bottom: 0.75rem;
 	line-height: 1.5;
 }
 .newsTop p,
@@ -487,7 +490,12 @@
 	line-height: 1rem;
 	font-size: 0.56rem;
 }
-
+.showinfo.public div {
+	display: -webkit-inline-flex;
+}
+.showinfo.public div>b {
+	white-space: nowrap;
+}
 .newsTop p:after,
 .newsTop .showinfo:after {
 	content: "";
@@ -569,7 +577,7 @@
 	display: inline;
 }
 .newsText p {
-	font-size: 0.6rem;
+	font-size: 0.56rem;
 	line-height: 1.05rem;
 }
 .newsText p.default,
@@ -681,59 +689,46 @@
 }
 .chapter5 {
 	padding: 0;
-	margin-top: 50px;
+	margin-top: 0.75rem;
 	position: relative;
-	height: 400px;
 }
 .chapter5 .img,.chapter5 .text {
-	display: inline-block;
-	position: absolute;
-	height: 358px;
+	display: block;
 }
 .chapter5 .img  {
 	padding: 0;
-	width: 640px;
-	height: 360px;
-}
-.chapter5 .img img {
-	height: 100%;
 	width: 100%;
 }
-.chapter5 .text  {
-	width: calc(100% - 690px);
-}
-.educationList .chapter:nth-child(2n+1) .img,
-.educationList .chapter:nth-child(2n) .text {
-	left: 0;
-}
-.educationList .chapter:nth-child(2n) .img,
-.educationList .chapter:nth-child(2n+1) .text {
-	right: 0;
+.chapter5 .img img {
+	width: 100%;
+	height: auto;
 }
 .chapter5 h1  {
-	font-size: 24px;
-	font-weight: bold;
-	height: 30px;
+	font-size: 0.7rem;
+	font-weight: 500;
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
 }
 .chapter5 .text>p {
-	margin-top: 12px;
-    overflow: hidden;
-    text-overflow:ellipsis;
-	white-space: nowrap;
+	display: -webkit-inline-flex;
+	margin-top: 0.3rem;
+	font-size: 0.54rem;
+     width: 100%;
 }
+.chapter5 p b,span {
+	vertical-align: top;
+}
+.chapter5 p b {
+	white-space:nowrap;
+}
+
 .chapter5 .intro {
-	position: absolute;
-	bottom: 0;
-	max-height: 220px;
+	max-height: 5.5rem;
 	overflow: hidden;
+	font-size: 0.56rem;
 }
 .chapter5 .intro b {
-	display: block;
-	line-height: 2;
-}
-.chapter5 .intro p {
-	word-break: break-all;
-	word-wrap: break-word;
+	font-weight: 500;
 }
 .chapter5:not(.cpfamily) {
 	cursor: pointer;
@@ -746,20 +741,6 @@
 	transition:all .5s;
 }
 
-.chapter5:hover h1,
-.chapter5:hover p,
-.chapter5:hover div {
-}
-.chapter5:not(.cpfamily):hover h1,
-.chapter5:not(.cpfamily):hover p,
-.chapter5:not(.cpfamily):hover div {
-	color: #DBAD3D;
-	-webkit-transform: translate(2px,2px);
-	transform: translate(2px,2px);
-}
-.chapter5:not(.cpfamily):hover img {
-	box-shadow: 0 5px 20px rgba(0,0,0,.3);
-}
 .visitPage img {
 	width: 100%;
 }

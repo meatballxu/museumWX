@@ -34,18 +34,12 @@ function setNav(st) {
 		$(".main-menu").addClass("transparent");
 	}
 	//固定菜单栏
-	var divOffsetTop = 150;
+	var divOffsetTop = 120;
 	window.onscroll=function(){
 		// 计算页面滚动了多少（需要区分不同浏览器）    
 		var topVal = 0;    
-		if(window.pageYOffset){//这一条滤去了大部分， 只留了IE678    
+		if(window.pageYOffset){  
 			topVal = window.pageYOffset;
-		}
-		else if(document.documentElement.scrollTop ){//IE678 的非quirk模式    
-			topVal = document.documentElement.scrollTop;
-		}    
-		else if(document.body.scrolltop){//IE678 的quirk模式    
-			topVal = document.body.scrolltop;
 		}
 		if(topVal <= divOffsetTop){    
 			$(".main-menu.fix").removeClass("fix");

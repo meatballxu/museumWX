@@ -227,9 +227,9 @@
 }*/
 
 .listPage h1.title {
-	font-size: 48px;
-	margin-top: 60px;
-	margin-bottom: 50px;
+	font-size: 1.15rem;
+	margin-top: 0.75rem;
+	margin-bottom: 0.5rem;
 	font-weight: bold;
 }
 .listPage h1.title+p {
@@ -469,18 +469,16 @@
 	max-height: 379.95px;
 }
 .storeOr {
-	width: 320px;
-	padding-left: 160px;
-	float: right;
-	text-align: right;
+	width: 100%;
 }
 .storeOr dt{
-	font-size: 20px;
-color: #999999;
-margin-top: 10px;
+	font-size: 0.6rem;
+	color: #999999;
+	margin-top: 10px;
+	font-weight: normal;
 }
 .storeOr b{
-	font-size: 12px;
+	font-size: 0.6rem
 }
 .storeOr img {
 	width: 63px;
