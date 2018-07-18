@@ -761,17 +761,8 @@ h6 {
 	transition:all .5s;
 }
 
-.visitPage img {
+.visitPage .tabs-content img {
 	width: 100%;
-}
-.visitPage .VRbox {
-      height: 810px;
-    margin-top: 50px;
-    padding: 114px 0 0;
-    background: url(../img/XPM/visit0.jpg) no-repeat TOP;
-}
-.visitPage .VRbox iframe {
-	margin-left: 30px;
 }
      
 .academicDetail .chapter1 .image.first{
