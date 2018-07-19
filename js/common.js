@@ -26,8 +26,15 @@ function initTab() {
 		}
 	});
 	$(".tabs-nav li").click(function(){
-		switchShow(".tabs-nav a",".tabs-content",$(this).find("a"));
+		$clickli = $(this);
+		$clicklink = $clickli.find("a");
+		$tablink = $(".tabs-nav > a").eq(2);
+		$tablink.remove();
+		$clicklink.remove();
+		$(".tabs-nav>a").eq(1).after($clicklink);
+		$clickli.append($tablink);
 		closeTab();
+		switchShow(".tabs-nav a",".tabs-content",$clicklink);
 	})
 	$(".tabs-nav li a").click(closeTab);
 	var tabTop = $(".tabs-nav").offset().top;
