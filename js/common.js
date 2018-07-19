@@ -10,6 +10,7 @@ function switchShow(tabs,content,$obj) {
 //		$('body').scrollTop(tagInitial)
 //	}
 }
+$
 $(".switchBar a").click(function(){
 	if(!$(this).hasClass("on")) {
 		$(".switchBar a").removeClass("on");
@@ -32,6 +33,11 @@ function initTab() {
 		$tablink.remove();
 		$clicklink.remove();
 		$(".tabs-nav>a").eq(1).after($clicklink);
+		$clicklink.click(function(){
+			if(!$(this).hasClass("on")) {
+				switchShow(".tabs-nav a",".tabs-content",$clicklink)
+			}
+		})
 		$clickli.append($tablink);
 		closeTab();
 		switchShow(".tabs-nav a",".tabs-content",$clicklink);
