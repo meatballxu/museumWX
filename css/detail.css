@@ -448,8 +448,8 @@ h6 {
 	font-size: 0.6rem;
 	color: #999999;
 	background-color: #FFFFFF;
-	padding: 0 4px;
-	margin: 0 4px;
+	padding: 0;
+	margin: 0 0.15rem;
 	position: relative;
 }
 .switchBar > a.on {
@@ -477,6 +477,15 @@ h6 {
 }
 .switchBar > a.on.only:after {
 	content: none;
+}
+.switchBar > a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -0.3rem;
+	width: 0.3rem;
+	height: 100%;
+	background-color: #FFFFFF;
 }
 
 .newsTop {
