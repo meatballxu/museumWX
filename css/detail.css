@@ -306,17 +306,17 @@ h6 {
 	padding-left: 0.25rem;
 }
 .chapter3 dt {
-	font-size: 14px;
+	font-size: 0.7rem;
 	font-weight: bold;
-	margin-bottom: 15px;
+	margin-bottom: 0.5rem;
 }
 .chapter3 dd {
-	font-size: 13px;
-	color: #3F3F3F;
-	line-height: 20px;
+	font-size: 0.56rem;
+	color: #999999;
+	line-height: 1rem;
 }
 .chapter3 dd+dd {
-	margin-top: 30px;
+	margin-top: 0.3rem;
 }
 /*会员招募*/
 .chapter > .arrow3:first-child {
