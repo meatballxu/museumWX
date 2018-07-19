@@ -314,7 +314,8 @@ h1 {
     border-radius: 0;
 }
 .btn-red:active,
-.btn-red:focus {
+.btn-red:focus,
+.btn-red:hover {
 	color: #FFFFFF;
 }
 .btn-black {

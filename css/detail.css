@@ -490,6 +490,7 @@ h6 {
 	margin-top: 0.75rem;
 }
 .newsTop>img {
+	width: 100%;
 	height: auto;
 }
 
@@ -678,14 +679,26 @@ h6 {
 .VRbox .content {
 	height: 8.15rem;
 	width: 100%;
-	background-color: #000000;
 }
 .VRbox .content .vrimg {
-	width: 100%;
 	height: 100%;
 	background: url(../img/show/vr.jpg) no-repeat center;
+	background-color: #000000;
 	background-size: contain;
 }
+@media only screen and (max-width: 450px) {
+.VRbox .content .vrimg {
+	width: 100%;
+}
+}
+@media only screen and (min-width: 450px) {
+.VRbox .content .vrimg,
+.newsTop>img,
+.videobox .vdbg  {
+	width: 18rem!important;
+}
+}
+
 .videobox .vdbg {
 	height: 11rem;
 	padding-top: 0.5rem;
