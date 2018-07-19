@@ -468,12 +468,8 @@ h6 {
 	transition:all .5s;
 	background: #1A1A1A;
 }
-.switchBar > a.on:after,
-.switchBar > a:hover:after {
+.switchBar > a.on:after {
 	width: 100%;
-}
-.switchBar > a:hover {
-	color: #1A1A1A;
 }
 .switchBar > a.on.only:after {
 	content: none;
@@ -579,6 +575,9 @@ h6 {
 .ckMore:focus {
 	color: #1A1A1A;
 }
+.ckMore:active b {
+	color: #DBAD3D;
+}
 .ckMore:not(.on)::before{
 	content: "......";
 	top: -1rem;
@@ -656,8 +655,7 @@ h6 {
 	margin-right: 0.1rem;
 	vertical-align: middle;
 }
-.focus a.on,
-.focus a:hover {
+.focus a.on {
 	color: #E4022C;
 }
 .focus a.on i.icon-weishoucang,

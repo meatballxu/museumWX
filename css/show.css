@@ -355,17 +355,6 @@ p {
 	-webkit-transition:all .5s;
 	transition:all .5s;
 }
-.educationIndex .detailBox:hover h1,
-.educationIndex .detailBox:hover h2 {
-	color: #DBAD3D;
-	transform: translateX(-5px);
-}
-.educationIndex .detailBox:hover h2:after {
-	background: #DBAD3D;
-}
-.educationIndex .detailBox:hover img {
-	box-shadow: 0 5px 20px rgba(0,0,0,.5);
-}
 .academicIndex .showlist:nth-child(2n+1) h2 {
 	top: 2.25rem;
 }
@@ -396,9 +385,6 @@ p {
 	font-size: 0.54rem;
     border-top: 1px dotted #E7E7E7;
 }
-.academicIndex .detailBox:hover img {
-    box-shadow: none;
-}
 .academicList .chapter .Exhibitions:nth-child(4n+1) {
 	margin-left: 0;
 }
@@ -408,10 +394,6 @@ p {
 .academicList .Exhibitions dd img {
 	-webkit-transition:all .5s;
 	transition:all .5s;
-}
-.academicList .Exhibitions dd:hover img {
-	-webkit-transform: scale(1.01) translateY(5px);
-	transform: scale(1.01) translateY(5px);
 }
 .academicList .Exhibitions dd:first-of-type {
 	background: #E9E9E9;

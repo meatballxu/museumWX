@@ -993,6 +993,11 @@ a.close:active {
 	text-align: right;
 	font-size: 0.56rem;
 }
+.redForm .inputline > input[type="text"],
+.redForm textarea{
+	-webkit-appearance: none;
+	border-radius: 0;
+}
 .redForm .inputline > input[type="text"]:focus {
 	border-left: 2px solid #E4022C;
 }
