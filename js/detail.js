@@ -10,7 +10,7 @@ $(function(){
 		window.location.href = $(this).closest(".detailBox").attr("data-tar");
 	});
 	
-	$(".ckMore:not(.cklist)").click(function(){
+	$(".ckMore:not(.cklist,.ckRich)").click(function(){
 		var $ck = $(this);
 		if($ck.hasClass("on")) {
 			$ck.removeClass("on");
@@ -23,7 +23,10 @@ $(function(){
 		}
 		
 	});
-	
+	$(".ckRich").click(function(){
+		$(this).toggleClass("on");
+		$("#"+$(this).attr("data-tar")).toggleClass("open");
+	});
 	$(".cklist").click(function(){
 		$(this).toggleClass("on");
 		$(".personlist").toggle();

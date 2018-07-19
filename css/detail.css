@@ -596,14 +596,19 @@ h6 {
 .ckMore.on b:nth-child(2) {
 	display: inline;
 }
-.newsText p {
+.newsText p,
+.newsText p span {
 	font-size: 0.56rem;
 	line-height: 1.05rem;
 }
 .newsText p.default,
-.moreContent > div.default:first-child  {
-	height: 8.4rem;
+.moreContent > div.default:first-child,
+.newsText .richText  {
+	height: 6.2rem;
 	overflow: hidden;
+}
+.newsText .richText.open {
+	height: auto;
 }
 .pointCarousel .item {
 	height: 9.5rem;

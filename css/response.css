@@ -25,6 +25,7 @@
 .result .content {
 	float: left;
 	height: 4.15rem;
+	overflow: hidden;
 }
 .result .imgbox {
 	width: 6.35rem;
@@ -101,7 +102,7 @@
 	height: auto;
 }
 .resultList dd p:first-child {
-	padding-top: 0.8rem;
+	padding-top: 0.85rem;
 }
 .resultList dl dt {
     font-size: 0.6rem;
