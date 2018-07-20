@@ -12,6 +12,12 @@ html {
     font-size: 22px;
     background:white;
 }
+@media only screen and (min-width: 700px)  {
+	html {
+	    font-size: 28px;
+	    background:white;
+	}
+}
 
 /* 内外边距通常让各个浏览器样式的表现位置不同 */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,figure,footer,header,hgroup,menu,nav,section {
@@ -149,6 +155,9 @@ h1 {
 }
 .f14{
 	font-size:0.7rem!important;
+}
+p {
+	font-size: 0.56rem;
 }
 .fl{
 	float:left;
@@ -322,7 +331,7 @@ h1 {
     color: #fff;
     background: #1A1A1A;
     border-color: #1A1A1A;
-    font-weight: 700;
+    font-weight: bold;
 }
 .btn-black:active,
 .btn-black:active {
@@ -336,7 +345,7 @@ h1 {
     color: #BDBDBD;
     background: #FFFFFF;
     border-color: #BDBDBD;
-    font-weight: 700;
+    font-weight: bold;
 }
 .btn-white2 {
     color: #1A1A1A;
@@ -483,7 +492,7 @@ h1 {
 	color: #DBAD3D;
 }
 .main-menu .lan {
-	font-size: 0.6rem;
+	font-size: 0.64rem;
 	margin-right: 0!important;
 }
 .main-menu .lan.cn .lan-cn ,
@@ -578,6 +587,28 @@ h1 {
 	border-radius: 100%;
 	box-shadow: 0.05rem 0.05rem 0.25rem rgba(0,0,0,0.5)
 }
+
+.main-menu.fix:not(.open) .opline {
+    height: 1.8rem;
+    width: 1.8rem;
+    float: right;
+    margin-right: 0;
+    text-align: center;
+    line-height: 1.8rem;
+}
+@media only screen and (max-width: 330px) {
+.main-menu.fix:not(.open) {
+	width: 1.7rem;
+	height: 1.7rem;
+     top: 0.3rem;
+
+}
+.main-menu.fix:not(.open) .opline {
+    height: 1.7rem;
+    width: 1.7rem;
+    line-height: 1.6rem;
+}
+}
 .main-menu.fix:not(.open) .logo,
 .main-menu.fix:not(.open) .opline>*,
 .main-menu.transparent:not(.open) .logo,
@@ -593,14 +624,6 @@ h1 {
 .main-menu.transparent:not(.open) .opline .more {
 	display: inline-block;
 	color: #FFFFFF;
-}
-.main-menu.fix:not(.open) .opline {
-    height: 1.8rem;
-    width: 1.8rem;
-    float: right;
-    margin-right: 0;
-    text-align: center;
-    line-height: 1.8rem;
 }
 /* menu end */
 .main-container,
@@ -695,19 +718,19 @@ footer .logo-xzl {
 }
 .tabs a {
 	color: #999999;
-	padding: 5px 18px;
-	font-size: 12px;
+	padding: 0.25rem 0.66rem;
+	font-size: 0.6rem;
 	display: inline-block;
 	font-weight: bold;
-	margin: 0 15px 0 0;
+	margin: 0 0.3rem 0 0;
 }
 .tabs a.on {
 	color: #1A1A1A;
 	background: #EBEBEB;
-	border-radius: 100px;
+	border-radius: 2.5rem;
 }
 .tag {
-	margin-bottom: 10px;
+	margin-bottom: 0.35rem;
 	font-weight: bold;
 }
 .tag a {
@@ -718,7 +741,7 @@ footer .logo-xzl {
 }
 .tag i {
 	display: none;
-	margin-left: 8px;
+	margin-left: 0.1rem;
 }
 .tag.on i {
 	display: inline-block;
@@ -878,6 +901,11 @@ a.close:active {
 	border-bottom: none;
 	box-shadow: 0 2px 6px 0 rgba(0,0,0,0.17);
 }
+@media only screen and (max-width: 330px) {
+.tabs-nav.fix {
+	left: -1.6rem;
+}
+}
 .tabs-nav.fix:after {
 	content: "";
 	position: absolute;
@@ -912,7 +940,7 @@ a.close:active {
 }
 .tabs-nav > a.on {
 	color: #1A1A1A;
-	font-weight: 500;
+	font-weight: bold;
 }
 .tabs-nav .arrow {
 	display: inline-block;
@@ -1066,7 +1094,7 @@ font-weight: bold;
     }
 .location font {
 	color: #1A1A1A;
-	font-weight: 500;
+	font-weight: bold;
 }
 
 /*闪现弹出框*/

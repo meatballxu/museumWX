@@ -11,7 +11,7 @@
 	left: 0;
 } 
 .topic h2 {
-	font-weight: 500;
+	font-weight: bold;
 	font-size: 0.9rem;
 	color: #1A1A1A;
 	z-index: 3;
@@ -504,7 +504,7 @@ h6 {
 
 .newsTop h2 {
 	font-size: 0.6rem;
-	font-weight: 500;
+	font-weight: bold;
 	margin-bottom: 0.75rem;
 	line-height: 1.5;
 }
@@ -585,7 +585,7 @@ h6 {
 	display: block;
 	text-align: center;
 	position: absolute;
-	font-weight: 500;
+	font-weight: bold;
 }
 .ckMore.noEL::before {
 	content: none;
@@ -720,6 +720,14 @@ h6 {
 	background: #1A1A1A;
 	box-shadow: -6px 6px 9px 0 rgba(0,0,0,0.12);
 }
+@media only screen and (max-width: 330px) {
+.videobox .vdbg {
+	height: 9rem;
+}
+.videobox .content {
+	height: 8rem;
+}
+}
 .videobox .content .play {
 	display: block;
 	position: absolute;
@@ -750,7 +758,7 @@ h6 {
 }
 .chapter5 h1  {
 	font-size: 0.7rem;
-	font-weight: 500;
+	font-weight: bold;
 	margin-top: 0.75rem;
 	margin-bottom: 0.5rem;
 }
@@ -773,7 +781,7 @@ h6 {
 	font-size: 0.56rem;
 }
 .chapter5 .intro b {
-	font-weight: 500;
+	font-weight: bold;
 }
 .chapter5:not(.cpfamily) {
 	cursor: pointer;
@@ -828,7 +836,7 @@ h6 {
 	padding-top: 1rem;
 	font-size: 0.88rem;
 	margin-bottom: 0.5rem;
-	font-weight: 500;
+	font-weight: bold;
 	line-height: 1.5;
 }
 .eventTop h2 {

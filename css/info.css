@@ -131,7 +131,7 @@ ul.artFace li:first-child img {
 	max-width: 100%;
 }
 ul.artFace h4 {
-	font-weight: 500;
+	font-weight: bold;
 	font-size: 0.6rem;
 	color: #1A1A1A;
 	margin-bottom: 0.5rem;

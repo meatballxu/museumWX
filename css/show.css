@@ -169,7 +169,7 @@ p {
 	font-size: 1rem;
 	margin-top: 0.75rem;
 	margin-bottom: 0.5rem;
-	font-weight: 500;
+	font-weight: bold;
 }
 .listPage h1.title+p {
 	line-height: 22px;
@@ -231,7 +231,7 @@ p {
 .storeInfo .newsTop .showinfo {
     height: auto;
     padding-top: 0.75rem;
-    font-weight: 500;
+    font-weight: bold;
 }
 .storeInfo .newsTop .showinfo:after {
  	content: none;
