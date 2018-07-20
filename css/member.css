@@ -117,8 +117,9 @@
 .recruitment .page-2 h1,
 .recruitment .page-3 h1,
 .recruitment .page-4 h1 {
- 	top: 7rem;
-	left: 1.4rem;
+      top: 6rem;
+    left: 1.4rem;
+    right: 1rem;
  	margin-top: 0;
 }
 .abs p {

@@ -107,3 +107,15 @@ function callPop(status,txt) {
 		
 	});
 }
+
+function callAlert(tit,txt) {
+	var htmltxt = "<div class=\'modalBox\'style=\'display: none;\'><div class=\'black-layer\'></div><div class=\'popModal\'><div class=\'popModal-inner\'><div class=\'popModal-title\'></div><div class=\'popModal-text\'></div></div><div class=\'popModal-buttons \'><span class=\'popModal-button popModal-button-bold\'>确定</span></div></div>";
+	$modal = $(htmltxt);
+	$modal.find(".popModal-title").html(tit);
+	$modal.find(".popModal-text").html(txt);
+	$modal.find(".popModal-button").click(function(){
+		$modal.fadeOut(function(){$modal.remove()});
+	})
+	$("body").append($modal);
+	$modal.fadeIn();
+}
