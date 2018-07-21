@@ -1505,9 +1505,20 @@ a.close:active {
 	padding: 10px 20px;
 }
 
+.black-layer {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 10600;
+	-webkit-transition-duration: 400ms;
+	transition-duration: 400ms;
+}
 .popModal {
 	width: 80%;
-	position: absolute;
+	position: fixed;
 	z-index: 11000;
 	left: 10%;
 	margin-top: -7.2rem;
@@ -1563,16 +1574,4 @@ a.close:active {
 	box-sizing: border-box;
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
-}
-
-.black-layer {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.4);
-	z-index: 10600;
-	-webkit-transition-duration: 400ms;
-	transition-duration: 400ms;
 }
