@@ -155,11 +155,14 @@ ul.artFace dd {
 }
 ul.artFace dt {
 }
+ul.artFace dd {
+	width: calc(100% - 2rem);
+}
 ul.artFace dt img {
 	width: 1.35rem;
 	height: 1.35rem;
 	border-radius: 100%;
-	margin-right: 0.375rem;
+	margin-right: 0.3rem;
 }
 ul.artFace dd b {
       line-height: 1.8;
