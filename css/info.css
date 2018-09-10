@@ -77,6 +77,7 @@
 	font-size: 0.95rem;
 	margin-right: 0.25rem;
 }
+
 .newsQA .qa {
 	padding: 0.75rem 0;
 	border-bottom: 0.025rem dashed #DFDFDF;
@@ -86,113 +87,398 @@
 	border-bottom: none;
 	/*margin-bottom: 100px;*/
 }
-.newsTop .showinfo span:not(:nth-of-type(1)){
+
+.newsTop .showinfo span:not(:nth-of-type(1)) {
 	padding-left: 74px;
 }
+
 .educationInfo .newsQA {
 	margin-top: -1.5rem;
 }
+
 .artTop h2 {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
+
 .artTop .inf {
 	padding-bottom: 0.5rem;
-    line-height: 1.7;
-    max-height: 270px;
-    overflow: hidden;
+	line-height: 1.7;
+	max-height: 270px;
+	overflow: hidden;
 }
+
 .artTop .inf+.inf {
 	padding-top: 0.5rem;
 }
+
 .artTop .inf:nth-child(5) {
-	border-bottom: 1px dashed #DFDFDF; ;
+	border-bottom: 1px dashed #DFDFDF;
+	;
 }
+
 .artTop .inf i {
 	display: block;
 	font-weight: bold;
 }
+
 .artTop .or {
 	padding-top: 0.75rem;
 	border-top: 1px dashed #DFDFDF;
 }
-.artTop .or .orcode  {
-	position:static;	
-     display: inline-block;
-     margin-right: 0.5rem;
+
+.artTop .or .orcode {
+	position: static;
+	display: inline-block;
+	margin-right: 0.5rem;
 }
+
 ul.artFace li:not(:last-child) {
 	margin-bottom: 1rem;
 }
+
 ul.artFace li:first-child {
 	height: 9.75rem;
 }
+
 ul.artFace li:first-child img {
 	max-height: 100%;
 	max-width: 100%;
 }
+
 ul.artFace h4 {
 	font-weight: bold;
 	font-size: 0.6rem;
 	color: #1A1A1A;
 	margin-bottom: 0.5rem;
 }
+
 ul.artFace h4:before {
 	content: "";
-	border-color: #000 transparent transparent  transparent;
+	border-color: #000 transparent transparent transparent;
 	border-width: 0.375rem 0.35rem 0.35rem 0;
 	border-style: solid;
-    display: inline-block;
-    vertical-align: middle;
-    width: 0;
-    height: 0;
-    margin-right: 0.125rem;
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	height: 0;
+	margin-right: 0.125rem;
 }
+
 ul.artFace dt,
 ul.artFace dd {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 0.54rem;
 }
-ul.artFace dt {
-}
+
+ul.artFace dt {}
+
 ul.artFace dd {
 	width: calc(100% - 2rem);
 }
+
 ul.artFace dt img {
 	width: 1.35rem;
 	height: 1.35rem;
 	border-radius: 100%;
 	margin-right: 0.3rem;
 }
+
 ul.artFace dd b {
-      line-height: 1.8;
+	line-height: 1.8;
 }
+
 ul.artFace dl {
 	margin-top: 0.75rem;
 }
+
 ul.artFace .info {
-	margin-top:  0.75rem;
-	padding-top:  0.75rem;
+	margin-top: 0.75rem;
+	padding-top: 0.75rem;
 	line-height: 1.8;
 	border-top: 1px dashed #DFDFDF;
 }
+
 .artInfo h5 {
 	font-weight: bold;
 	font-size: 0.7rem;
-	padding:  0.75rem 0;
+	padding: 0.75rem 0;
 }
-.artInfo h5 + .newsText {
-      padding: 0 0;
+
+.artInfo h5+.newsText {
+	padding: 0 0;
 }
+
 .artInfo h5.bg {
-      background: url(../img/line.jpg) no-repeat -30px 52px;
-    padding-left: 0;
-    margin-left: 0;
+	background: url(../img/line.jpg) no-repeat -30px 52px;
+	padding-left: 0;
+	margin-left: 0;
 }
+
 .artInfo h5 span {
 	display: inline-block;
 	background: #FFFFFF;
 }
+
 .academicEvents {
 	margin-top: 0;
-	}
+}
+
+.ticketInfo .newsTop {
+	padding: 0;
+}
+
+.ticketPage .btn-numbox {
+	overflow: hidden;
+	margin-top: 1rem;
+}
+
+.ticketPage .btn-numbox li {
+	float: left;
+}
+
+.ticketPage .btn-numbox li.label {
+	width: 4rem;
+	padding: 0.96rem 0 0;
+	text-align: left;
+}
+
+.ticketPage .btn-numbox>li:last-child {
+	width: calc(100% - 4rem);
+	text-align: right;
+}
+
+.ticketPage .btn-numbox .price {
+	display: inline-block;
+	padding-top: 0.75rem;
+	padding-right: 0.5rem;
+	font-size: 0.7rem;
+}
+
+.ticketPage .btn-numbox li .number {
+	display: inline-block;
+	font-size: 0.7rem;
+	color: #1A1A1A;
+}
+
+.ticketPage .btn-numbox .count {
+	overflow: hidden;
+	display: inline-block;
+}
+
+.ticketPage .btn-numbox .count.initial .num-jian,
+.ticketPage .btn-numbox .count.initial .input-num,
+.ticketPage .btn-numbox .count.initial .num-jia,
+.ticketPage .btn-numbox .count .num-jian:active,
+.ticketPage .btn-numbox .count .num-jia:active {
+	border-color: #dddddd;
+	background-color: #dddddd;
+	color: #777777;
+}
+
+.ticketPage .btn-numbox .count.initial .num-jian {
+	width: 0.5rem;
+}
+
+.ticketPage .btn-numbox .count .num-jian,
+.ticketPage .input-num,
+.ticketPage .num-jia {
+	display: inline-block;
+	width: 2.2rem;
+	height: 2.4rem;
+	line-height: 2.1rem;
+	text-align: center;
+	font-size: 1rem;
+	color: #FFFFFF;
+	cursor: pointer;
+	border: 1px solid #777777;
+	background: #777777;
+	font-family: Helvetica, sans-serif;
+}
+
+.ticketPage .btn-numbox .count .input-num {
+	height: 2.4rem;
+	width: 1.3rem;
+	font-size: 0.75rem;
+	border-left: 0;
+	border-right: 0;
+}
+
+.ticketPage .btn-numbox .count .num-jian {
+	border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.ticketPage .btn-numbox .count .num-jia {
+	border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.ticketPage .tickIntro {
+	background-color: #F6F6F6;
+	color: #333333;
+	margin: 0.75rem -0.75rem 0.75rem;
+	padding: 0 0.75rem 0.75rem;
+}
+
+.ticketPage .tickIntro .title {
+	background-color: #1A1A1A;
+	color: #FFFFFF;
+	margin: 0 -0.75rem 0.5rem;
+	padding: 0.35rem 0.75rem;
+}
+
+.ticketPage .total span {
+	font-size: 0.7rem;
+	display: inline-block;
+	padding-top: 0.4rem;
+}
+.ticketPage  #confirmTicket {
+	padding-left: 1.55rem;
+	padding-right: 1.55rem;
+}
+.ticket-container .tabs-nav {
+	font-size: 0;
+    height: 1.2rem;
+}
+.ticket-container .tabs-nav>a {
+    height: 1.18rem;
+    }
+.ticket-container .tabs-nav a {
+	width: 33.33%;
+	margin: 0;
+}
+.ticket-container .tabs-nav>a:after {
+      content: none;
+}
+.ticket-container .tabs-nav font {
+	position: relative;
+	display: inline-block;
+	height: 100%;
+}
+.ticket-container .tabs-nav a.on font:after {
+    width: 100%;
+}
+.ticket-container .tabs-nav font:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0.1rem;
+    background: #1A1A1A;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+.ticketlist .tick {
+	margin-bottom: 0.8rem;
+}
+.ticketlist .tick .header {
+	height: 3.5rem;
+}
+#ticket0 .ticketlist .tick {
+	border: 1px solid #EFE3E3;
+	background: #FDF5F3;
+}
+#ticket0 .ticketlist .tick .header {
+	border-bottom: 1px solid #EFE3E3;
+}
+#ticket1 .ticketlist .tick,
+#ticket2 .ticketlist .tick {
+	border: 1px solid #DFDFDF;
+	background: #F8F8F8;
+	position: relative;
+}
+#ticket1 .ticketlist .tick:after,
+#ticket2 .ticketlist .tick:after {
+	content: "";
+	position: absolute;
+	height: 3rem;
+	width: 2rem;
+	right: 0;
+	top: 0;
+	background: url(../img/ticket/ticket1.png) right top no-repeat;
+	background-size: contain;
+}
+#ticket2 .ticketlist .tick:after {
+	background: url(../img/ticket/ticket2.png) right top no-repeat;
+	background-size: contain;
+}
+#ticket1 .ticketlist .tick .header,
+#ticket2 .ticketlist .tick .header {
+	border-bottom: 1px solid #DFDFDF;
+}
+.ticketlist .tick .sub,
+.ticketlist .tick .tit {
+	float: left
+}
+.ticketlist .tick .sub {
+	width: 5rem;
+	height: 100%;
+	padding: 0.9rem ;
+}
+.tick .sub>div {
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	background-size: contain;
+}
+#ticket0 .sub>div {
+	background-image: url(../img/ticket/free0.png);
+}
+#ticket1 .sub>div,
+#ticket2 .sub>div  {
+	background-image: url(../img/ticket/free1.png);
+}
+.ticketlist .tick .tit {
+	width: calc(100% - 5rem);
+	height: 3.5rem;
+	overflow: hidden;
+	font-weight: bold;
+	padding-right: 0.5rem;
+}
+#ticket0 .tick .tit,
+#ticket2 .tick .tit {
+	line-height: 3.5rem;
+}
+#ticket1 .tick .tit {
+	padding-top: 0.8rem;
+}
+.ticketlist .tick .tit p{
+	font-size: 0.7rem;
+	max-height: 2.2rem;
+	overflow: hidden;
+    display:inline-block;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+#ticket1 .tick .tit p {
+	width: 100%;
+	max-height: 1.1rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#ticket1 .ticketlist .tick .tit p,
+#ticket2 .ticketlist .tick .tit p {
+	color: #3D3D3D;
+}
+#ticket1 .tick .tit span {
+	color: #A9A9A9;
+	font-weight: bold;
+}
+.ticketlist .tick .footer {
+	height: 1rem;
+	font-size: 0.52rem;
+	color: #616161;
+	padding: 0 0.5rem;
+	line-height: 0.95rem;
+}
+#ticket1 .tick .footer,
+#ticket2 .tick .footer {
+	color: #999;
+}
+.ticketlist .tick .footer .date {
+	float: left;
+}
+.ticketlist .tick .footer .xzl {
+	float: right;
+}

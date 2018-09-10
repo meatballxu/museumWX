@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>谢子龙影像艺术馆</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../css/common2.css">
+		<link rel="stylesheet" href="../css/detail.css">
+		<link rel="stylesheet" href="../css/show.css">
+		<link rel="stylesheet" href="../css/info.css">
+	</head>
+
+	<body class="ticketPage">
+		<div class="main-container ticket-container">
+			<div class="detailBox">
+				<div class="mt50 text-center f14">选择您的门票数量</div>
+				<ul class="btn-numbox">
+		            <li class="label"><span class="number">参观票(FREE)</span></li>
+		            <li>
+		            		<span class="price">¥0</span>
+		                <ul class="count initial">
+		                    <li><span id="num-jian" class="num-jian"></span></li>
+		                    <li><input type="text" class="input-num" id="input-num" maxlength="2" value="0" /></li>
+		                    <li><span id="num-jia" class="num-jia">+</span></li>
+		                </ul>
+		            </li>
+				</ul>
+			   <div class="h50"></div>
+			   <div class="total">
+			   	<span class="fl">合计：<b id="totalNum">0</b> 张</span>
+			   	<a id="confirmTicket" class="fr btn btn-grey" href="javascript:">确认订票</a>
+			   </div>
+			   <div class="h50"></div>
+				<div class="tickIntro">
+					<div class="title">票务须知</div>
+					<p>
+					1、有效观展时间：<b>2018-9-16至2018-11-18</b>；
+					</p>
+					<p>
+					2、展厅开放时间：<b>周二至周六</b>，<b>10:00-18:00</b>（17:30后停止入场）；
+					</p>
+					<p>
+					3、取票：大厅自助取票机取票或者凭微信电子票检票入场；
+					</p>
+					<p>
+					4、检票：一人一票，检票当日一次入场有效；
+					</p>
+					<p>
+					5、儿童须在至少一名成人陪同下观展；
+					</p>
+					<p>
+					6、本商品一旦售出概不退换；
+					</p>
+					<p>
+					7、服务热线：0731-88991518；服务时间：10:00-18:00。
+					</p>
+			   </div>
+			   
+			</div>
+		</div>
+		<div class="h100"></div>
+		<script type='text/javascript' src='../js/jquery-3.3.1.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/bootstrap.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src="../js/common.js" charset='utf-8'></script>
+		<script type='text/javascript' src='../js/detail.js' charset='utf-8'></script>
+		<script>
+			 var num_jia = document.getElementById("num-jia");
+        var num_jian = document.getElementById("num-jian");
+        var input_num = document.getElementById("input-num");
+
+        num_jia.onclick = function() {
+			var num = parseInt(input_num.value) + 1;
+            input_num.value = num;
+            $("#totalNum").html(num);
+            $(".btn-numbox .count").removeClass("initial");
+            $("#num-jian").html("-");
+	        $("#confirmTicket").removeClass("btn-grey").addClass("btn-black");
+        }
+
+        num_jian.onclick = function() {
+
+            if(input_num.value <= 0) {
+                input_num.value = 0;
+            } else {
+            		var  num= parseInt(input_num.value) - 1;
+                input_num.value =num;
+                $("#totalNum").html(num);
+                if(input_num.value==0) {
+                	
+	            $(".btn-numbox .count").addClass("initial");
+	            $("#num-jian").html("");
+	            $("#confirmTicket").removeClass("btn-black").addClass("btn-grey")
+                }
+            }
+
+        }
+		</script>
+	</body>
+
+</html>

@@ -433,3 +433,34 @@ p {
     padding-top: 0.8rem;
     padding-left: 1rem;
 }
+
+.logo-top {
+	height: 2.7rem;
+	width: 3.5rem;
+	margin-left: 0.75rem;
+	background: url(../img/logo-nav.png) no-repeat center;
+	background-size: contain;
+}
+.ticketFace {
+	width: 64%!important;
+	margin-left: 18%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+.orderTicket {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 0.5rem 0.75rem;
+	text-align: center;
+	z-index: 10;
+	background: #FFFFFF;
+	box-shadow: 0.05rem 0.05rem 0.6rem rgba(0, 0, 0, 0.2);
+}
+.orderTicket a.btn {
+	width: 100%;
+    padding: 0.35rem;
+}
+.ticket-container .showinfo:after {
+    content: none;
+    }

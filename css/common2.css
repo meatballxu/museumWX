@@ -389,6 +389,9 @@ p {
 .mt10 {
 	margin-top: 0.25rem;
 }
+.mt-10 {
+	margin-top: -0.25rem;
+}
 
 .mt15 {
 	margin-top: 15px;
@@ -543,6 +546,16 @@ p {
 	background: #FFFFFF;
 	border-color: #1A1A1A;
 	font-weight: normal;
+}
+
+.btn-grey,
+.btn-grey:hover {
+	color: #999999;
+	background: #EEEEEE;
+	border-color: #EEEEEE;
+}
+.btn-grey:active {
+	box-shadow: none
 }
 
 .w80 {
@@ -1575,3 +1588,4 @@ a.close:active {
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 }
+
