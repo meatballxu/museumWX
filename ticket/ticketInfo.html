@@ -14,27 +14,31 @@
 		<link rel="stylesheet" href="../css/info.css">
 	</head>
 
-	<body class="ticketPage">
+	<body class="ticketPage" style="background-color: #F6F6F6;">
 		<div class="main-container ticket-container">
+			<div class="tikInfo">
+				<div class="img"><img src="../img/ep/show0.jpg" /></div>
+				<div class="text">
+					<p class="tit">菲利普•拉梅特个人摄影作品展</p>
+					<p>2018年04月29日 - 2018年06月10日</p>
+					<p>谢子龙影像艺术馆三楼南侧展厅</p>
+				</div>
+			</div>
 			<div class="detailBox">
-				<div class="mt50 text-center f14">选择您的门票数量</div>
-				<ul class="btn-numbox">
-		            <li class="label"><span class="number">参观票(FREE)</span></li>
-		            <li>
-		            		<span class="price">¥0</span>
-		                <ul class="count initial">
-		                    <li><span id="num-jian" class="num-jian"></span></li>
-		                    <li><input type="text" class="input-num" id="input-num" maxlength="2" value="0" /></li>
-		                    <li><span id="num-jia" class="num-jia">+</span></li>
-		                </ul>
-		            </li>
-				</ul>
-			   <div class="h50"></div>
-			   <div class="total">
-			   	<span class="fl">合计：<b id="totalNum">0</b> 张</span>
-			   	<a id="confirmTicket" class="fr btn btn-grey" href="javascript:">确认订票</a>
-			   </div>
-			   <div class="h50"></div>
+				<div class="countBox">
+					<div class="text-center f14">选择您的门票数量</div>
+					<ul class="btn-numbox">
+			            <li class="label"><span class="number">参观票(FREE)</span></li>
+			            <li>
+			            		<span class="price">¥0</span>
+			                <ul class="count initial">
+			                    <li><span id="num-jian" class="num-jian"></span></li>
+			                    <li><input type="text" class="input-num" id="input-num" maxlength="2" value="0" /></li>
+			                    <li><span id="num-jia" class="num-jia">+</span></li>
+			                </ul>
+			            </li>
+					</ul>
+				</div>
 				<div class="tickIntro">
 					<div class="title">票务须知</div>
 					<p>
@@ -62,7 +66,10 @@
 			   
 			</div>
 		</div>
-		<div class="h100"></div>
+		<div class="total">
+			<span class="fl">合计:<b id="totalNum">0</b>张&nbsp;&nbsp;&nbsp;需支付<b id="priceNum">0</b>元</span>
+			<a id="confirmTicket" class="fr btn btn-grey" href="javascript:">确认订票</a>
+		</div>
 		<script type='text/javascript' src='../js/jquery-3.3.1.min.js' charset='utf-8'></script>
 		<script type='text/javascript' src='../js/bootstrap.min.js' charset='utf-8'></script>
 		<script type='text/javascript' src="../js/common.js" charset='utf-8'></script>

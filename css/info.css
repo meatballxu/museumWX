@@ -230,7 +230,9 @@ ul.artFace .info {
 
 .ticketPage .btn-numbox {
 	overflow: hidden;
-	margin-top: 1rem;
+	margin-top: 0.75rem;
+	border-top: 1px solid #1A1A1A;
+	padding-top: 0.75rem;
 }
 
 .ticketPage .btn-numbox li {
@@ -318,7 +320,36 @@ ul.artFace .info {
 	margin: 0.75rem -0.75rem 0.75rem;
 	padding: 0 0.75rem 0.75rem;
 }
-
+.ticketPage .tikInfo {
+    background-color: #F6F6F6;
+	margin: 0 -0.75rem 0.5rem;
+	padding:  0.75rem;
+	font-size: 0;
+}.countBox {
+	margin: 0 -0.75rem 0.5rem;
+	background-color: #FFFFFF;
+	margin: 0 -0.75rem -0.25rem;
+	padding: 1rem 0.75rem;
+}
+.ticketPage .tikInfo .img {
+	display: inline-block;
+	width: 3rem;
+}
+.ticketPage .tikInfo .img img {
+	max-width: 100%;
+}
+.ticketPage .tikInfo .text {
+	display: inline-block;
+	vertical-align: middle;	
+	text-align: right;
+	width: calc(100% - 3rem);
+}
+.ticketPage .tikInfo .tit {
+	font-weight: bold;
+	font-size: 0.7rem;
+	line-height: 1;
+	padding-bottom: 0.4rem;
+}
 .ticketPage .tickIntro .title {
 	background-color: #1A1A1A;
 	color: #FFFFFF;
@@ -329,7 +360,7 @@ ul.artFace .info {
 .ticketPage .total span {
 	font-size: 0.7rem;
 	display: inline-block;
-	padding-top: 0.4rem;
+	padding-top: 0.25rem;
 }
 .ticketPage  #confirmTicket {
 	padding-left: 1.55rem;
@@ -376,18 +407,45 @@ ul.artFace .info {
 .ticketlist .tick .header {
 	height: 3.5rem;
 }
+
 #ticket0 .ticketlist .tick {
 	border: 1px solid #EFE3E3;
 	background: #FDF5F3;
 }
-#ticket0 .ticketlist .tick .header {
+#ticket0 .ticketlist .tick .header,
+#ticket0 .ticketlist .tick .body {
 	border-bottom: 1px solid #EFE3E3;
+}
+.ticketlist .tick .body {
+	padding: 0.7rem 1rem;
+	background: #FFFFFF;
+	color: #616161;
+}
+.ticketlist .tick .btn-box {
+	height: 1.7rem;
+	margin: 0.5rem -0.375rem 0;
+}
+.ticketlist .tick .btn {
+	width: calc(50% - 0.75rem);
+	float: left;
+	margin: 0 0.375rem;
+	border-radius: 0;
+}
+.ticketlist .tick .btn.btn-white2 {
+	background-color: #FFFFFF;
+}
+.tick label {
+	font-weight: normal;
 }
 #ticket1 .ticketlist .tick,
 #ticket2 .ticketlist .tick {
 	border: 1px solid #DFDFDF;
 	background: #F8F8F8;
 	position: relative;
+}
+#ticket1 .tick .btn.btn-red,
+#ticket2 .tick .btn.btn-red {
+	background-color: #333;
 }
 #ticket1 .ticketlist .tick:after,
 #ticket2 .ticketlist .tick:after {
@@ -405,7 +463,9 @@ ul.artFace .info {
 	background-size: contain;
 }
 #ticket1 .ticketlist .tick .header,
-#ticket2 .ticketlist .tick .header {
+#ticket2 .ticketlist .tick .header,
+#ticket1 .ticketlist .tick .body,
+#ticket2 .ticketlist .tick .body {
 	border-bottom: 1px solid #DFDFDF;
 }
 .ticketlist .tick .sub,
@@ -523,4 +583,47 @@ ul.artFace .info {
 	color:#E51438;
 	text-decoration: underline;
 	margin: 0 0.125rem;
+}
+.orLayer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.75);
+	text-align: center;
+	padding-top: 3.6rem;
+}
+.orLayer a.close {
+	font-size: 1.5rem;
+	color: #FFFFFF;
+	font-weight: normal;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.orLayer img{
+	width: 86%;
+	margin: 0 auto;
+}
+.orLayer h1 {
+	color: #FFFFFF;
+	font-size: 0.8rem;
+	margin-bottom: 1rem;
+}
+.orLayer h2 {
+	color: #FFFFFF;
+	font-size: 0.6rem;
+	margin-top: 1rem;
+}
+
+.ticketPage .total {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.5rem 0.75rem;
+	z-index: 10;
+	background: #FFFFFF;
+	box-shadow: 0.05rem 0.05rem 0.6rem rgba(0, 0, 0, 0.2);
 }
