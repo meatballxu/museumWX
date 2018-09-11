@@ -119,3 +119,11 @@ function callAlert(tit,txt) {
 	$("body").append($modal);
 	$modal.fadeIn();
 }
+
+function loading() {
+	$("body").append("<div class=\'load-container load8\'><div class=\'loader\'>Loading...</div></div>");
+	
+}
+function loadingDone() {
+	$(".load-container").remove();
+}

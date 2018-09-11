@@ -370,6 +370,7 @@ ul.artFace .info {
     transition: all .5s;
 }
 .ticketlist .tick {
+	cursor: pointer;
 	margin-bottom: 0.8rem;
 }
 .ticketlist .tick .header {
