@@ -369,6 +369,8 @@ ul.artFace .info {
 .ticket-container .tabs-nav {
 	font-size: 0;
     height: 1.2rem;
+}.ticket-container .tabs-nav.fix{
+	height: 2.1rem;
 }
 .ticket-container .tabs-nav>a {
     height: 1.18rem;
