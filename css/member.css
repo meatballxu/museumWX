@@ -35,7 +35,7 @@
 }
 .joinMember {
 	position: absolute;
-	bottom: 3.5rem;
+	bottom: 1.5rem;
 	left: 0;
 	right: 0;
     z-index: 5;
@@ -140,18 +140,12 @@
 	.swiper-container-horizontal>.swiper-pagination-bullets{
 	    bottom: 5.3rem;
 	}
-	.joinMember {
-		bottom: 2.3rem;
-	}
 }
 
 @media only screen and (min-height: 700px) {
 	
 	.swiper-container-horizontal>.swiper-pagination-bullets{
 	    bottom: 10rem;
-	}
-	.joinMember {
-		bottom: 7rem;
 	}
 }
 @media only screen and (max-height: 550px) {
@@ -167,9 +161,6 @@
 	.text1-1 {
 		top: 15.8rem;
 	}
-	.joinMember {
-		bottom: 2.5rem;
-		}
 	.recruitment .page-2 h1, .recruitment .page-3 h1, .recruitment .page-4 h1 {
 		top: 5rem;
 	}
@@ -189,3 +180,71 @@
     background: #E4022C;
     color: #FFFFFF;
 }
+
+/** 0219 **/
+.cardlist {
+	padding: 0.4rem;
+	top: 3.5rem;
+}
+.cardlist .card {
+	width:calc(50% - 0.8rem);
+	margin: 0.4rem;
+	float: left;
+	background: rgba(255,255,255,.8);
+	cursor: pointer;
+}
+.cardlist .card .tName,
+.cardlist .card .tGrey {
+	text-align: center;
+}
+.cardlist .card .tName {
+	font-weight: 500;
+}
+.cardlist .card .tGrey {
+	font-size: 0.5rem;
+}
+.cardlist .card .tGrey span {
+	font-size: 0.7rem;
+}
+.cardlist .card dl {
+	margin: 0.2rem;
+}
+
+.cardlist .card img {
+	width: 100%;
+}
+.introText {
+	padding: 3rem 1rem 1rem;
+	color: #FFFFFF;
+	height: 100%;
+}
+.page-intro .ctext {
+	height: 100%;
+	overflow-y: scroll;
+	padding: 0.5rem 0 3.2rem;
+}
+.page-intro .cardName {
+	font-size: 1rem;
+	text-align: center;
+	color: #FFFFFF;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 0.4rem;
+}
+.page-intro .cardName span {
+	font-weight: bold;
+}
+.page-intro .cardName em {
+	font-weight: normal;
+}
+.page-intro h2 {
+	font-size: 0.8rem;
+	text-shadow: 1px 1px 1px rgba(255,255,255,1);
+	color: #E4022C;
+	margin: 0.6rem 0.5rem 0.25rem;
+}
+.page-intro p {
+	font-size: 0.7rem;
+	padding: 0 0.2rem 0 0.5rem;
+	line-height: 2;
+}
+/** 0219 end**/
