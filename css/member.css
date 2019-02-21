@@ -33,12 +33,17 @@
 .alpha-layer {
 	background: rgba(0,0,0,0.59);	
 }
-.joinMember {
+.backto1,.joinMember {
 	position: absolute;
 	bottom: 1.5rem;
-	left: 0;
+}
+.joinMember {
+	width: 60%;
 	right: 0;
-    z-index: 5;
+}
+.backto1 {
+	width: 40%;
+	left: 0;
 }
 .page-form .content{
 	padding: 0 1.3rem;

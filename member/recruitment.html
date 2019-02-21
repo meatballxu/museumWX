@@ -16,7 +16,6 @@
 	
 	<body>
 		<div class="logo-xzl animated fadeInDown"><img src="../img/logo-xzl.png" /></div>
-		<a class="btn-red joinMember delay02 animated fadeInUp" style="display: none;" href="javascript:">加入会员</a>
 		<div class="swiper-container recruitment swiper-no-swiping">
 		    <div class="swiper-wrapper">
 		    		<!--page 1-->
@@ -63,6 +62,9 @@
 		        </div>
 		    		<!--page 2-->
 		        <div class="swiper-slide alpha-layer page-intro">
+					<a class="btn-grey backto1 delay02 animated fadeInUp" style="display: none;" href="javascript:">上一步</a>
+		        		<a class="btn-red joinMember delay02 animated fadeInUp" style="display: none;" href="javascript:">加入会员</a>
+		        		
 		        		<div class="introText">
 		        			<div class="ctext">
 		        				<div class="cardName">
@@ -162,6 +164,7 @@
 						    </ul>
 						    <h4>会员卡仅限会员本人使用，会籍有效期1年</h4>
 		        				<a class="btn-red radius-4 goPay" href="javascript:">确认，支付会员费</a>
+		        				<a class="btn-grey mt30 radius-4 backto2" href="javascript:">查看会员详情</a>
 						 </div>
 					 </div>	  
 		        </div>
@@ -185,9 +188,13 @@
 				on: {
 					slideChangeTransitionStart: function(){
 						if(this.activeIndex==1) {
-							$(".joinMember").show();
+							$(".joinMember,.backto1").show();
+							$(".recruitment").removeClass("swiper-no-swiping");
+						}else if(this.activeIndex==0){
+							$(".recruitment").addClass("swiper-no-swiping");
+							$(".joinMember,.backto1").hide();
 						}else {
-							$(".joinMember").hide();
+							$(".joinMember,.backto1").hide();
 						}
 					},
 					slideChangeTransitionEnd: function(){
@@ -202,6 +209,12 @@
 			});
 			$('.joinMember').click(function(){
 			    mySwiper.slideTo(2, 200, true);
+			});
+			$('.backto1').click(function(){
+			    mySwiper.slideTo(0, 200, true);
+			});
+			$('.backto2').click(function(){
+			    mySwiper.slideTo(1, 200, true);
 			});
 			$(function(){
 			     $(document).on('click','.goPay',function () {
