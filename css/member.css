@@ -188,15 +188,20 @@
 
 /** 0219 **/
 .cardlist {
-	padding: 0.4rem;
-	top: 3.5rem;
+	margin: 0.5rem;
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	top: 4rem;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 0.4rem;
 }
 .cardlist .card {
 	width:calc(50% - 0.8rem);
 	margin: 0.4rem;
 	float: left;
-	/*background: rgba(255,255,255,.8);*/
+	background: none;
 	cursor: pointer;
+	box-shadow: none;
 }
 .cardlist .card .tName,
 .cardlist .card .tGrey {
