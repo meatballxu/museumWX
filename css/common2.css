@@ -1659,3 +1659,10 @@ a.close:active {
   }
 }
 /** loader **/
+.layer_close {
+	font-size: 1rem;
+	position: absolute;
+	top: 0.75rem;
+	right: 0.75rem;
+	line-height: 1rem;
+}

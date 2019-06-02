@@ -228,10 +228,14 @@ ul.artFace .info {
 	padding: 0;
 }
 
+.countBox .btn-numbox:nth-child(2) {
+	border-top: 1px solid #1A1A1A;
+	margin-top: 0.75rem;
+}
 .ticketPage .btn-numbox {
 	overflow: hidden;
-	margin-top: 0.75rem;
-	border-top: 1px solid #1A1A1A;
+	/*margin-top: 0.75rem;*/
+	/*border-top: 1px solid #1A1A1A;*/
 	padding-top: 0.75rem;
 }
 
@@ -244,7 +248,17 @@ ul.artFace .info {
 	padding: 0.96rem 0 0;
 	text-align: left;
 }
-
+.ticketPage .btn-numbox .label .number:not(:only-child) {
+	display: block;
+	margin-top: -4px;
+}
+.ticketPage .btn-numbox .label b {
+	display: block;
+	color: #999999;
+	margin-top: 2px;
+    font-size: 0.62rem;
+    font-weight: normal;
+}
 .ticketPage .btn-numbox>li:last-child {
 	width: calc(100% - 4rem);
 	text-align: right;
@@ -304,6 +318,10 @@ ul.artFace .info {
 	font-size: 0.75rem;
 	border-left: 0;
 	border-right: 0;
+	border-radius: 0;
+	box-shadow: none!important;
+	-webkit-box-shadow:none!important;
+	border-top: none;
 }
 
 .ticketPage .btn-numbox .count .num-jian {
@@ -629,4 +647,92 @@ ul.artFace .info {
 	z-index: 10;
 	background: #FFFFFF;
 	box-shadow: 0.05rem 0.05rem 0.6rem rgba(0, 0, 0, 0.2);
+}
+/**20190530**/
+.ticket-layer {
+	background:#FFFFFF;
+	position: fixed;
+	bottom: 0;
+	padding: 1.2rem 0.7rem 1rem;
+	width: 100%;
+	z-index: 10605;
+}
+.ticket-layer h4 {
+	font-size: 0.7rem;
+	font-weight: normal;
+	color: #000000;
+	margin-bottom: 0.75rem;
+}
+.ticket-layer .tick-type .type {
+	background: #efefef;
+	border-radius: 5px;
+	padding: 0.45rem 0.65rem;
+	margin: 0.5rem 0;
+	position: relative;
+}
+.ticket-layer .tick-type .type::after {
+	content: "";
+	display: block;
+	position: absolute;
+	border:1px solid #585858;
+	border-left: none;
+	border-bottom: none;
+	height: 0.4rem;
+	width: 0.4rem;
+	right: 0.65rem;
+	top: 50%;
+	margin-top: -0.2rem;
+	transform: rotate(45deg);
+}
+.ticket-layer .tick-type .type h5 {
+	display: inline-block;
+	font-weight: normal;
+	font-size: 0.8rem;
+}
+.ticket-layer .tick-type .type b {
+	font-weight: normal;
+	color: #333333;
+	padding-left: 0.4rem;
+}
+.ticket-layer .tick-type .type font {
+	float: right;
+	font-size: 0.8rem;
+	line-height: 0.92rem;
+	margin-right: 0.65rem;
+	color: #da0e0e;
+	font-weight: 600;
+}
+.ticket-layer .tick-type .type font::before {
+	content: "¥";
+}
+.calender-box {
+    text-align: center;
+    padding: 0.5rem 0 1rem;
+}
+.calender-box .layui-laydate {
+	font-size: 0.75rem;
+}
+.calender-box .layui-laydate-footer span {
+	font-size: 0.75rem;
+    height: 1.2rem;
+    line-height: 1rem;
+    margin: 0 0 0 -1px;
+    padding: 0 0.8rem;
+}
+.calender-box .laydate-set-ym {
+	font-size: 0.85rem;
+}
+.calender-box .layui-laydate-footer {
+	height: 2.2rem;
+    line-height: 2rem;
+}
+.calender-box .no-ticket {
+	background: #ff0000!important;
+    color: #ffffff!important;
+}
+.calender-box .laydate-day-mark::after {
+     background-color: #FF0000; 
+}
+.calender-box  span.laydate-day-mark{
+	color: #FF0000;
 }

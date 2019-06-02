@@ -28,16 +28,49 @@
 				<div class="countBox">
 					<div class="text-center f14">选择您的门票数量</div>
 					<ul class="btn-numbox">
-			            <li class="label"><span class="number">参观票(FREE)</span></li>
+			            <li class="label"><span class="number">全票</span></li>
 			            <li>
-			            		<span class="price">¥0</span>
+			            		<span class="price">¥<em class="price-num">100</em></span>
 			                <ul class="count initial">
-			                    <li><span id="num-jian" class="num-jian"></span></li>
-			                    <li><input type="text" class="input-num" id="input-num" maxlength="2" value="0" /></li>
-			                    <li><span id="num-jia" class="num-jia">+</span></li>
+			                    <li><span  class="num-jian"></span></li>
+			                    <li><input type="text"  class="input-num" maxlength="2" value="0" /></li>
+			                    <li><span  class="num-jia">+</span></li>
 			                </ul>
 			            </li>
 					</ul>
+					<!--
+                    	作者：xiaoliantuo@126.com
+                    	时间：2019-05-30
+                    	描述：
+					<ul class="btn-numbox">
+			            <li class="label">
+			            		<span class="number">学生票</span>
+			            		<b>请出示学生证</b>
+			            </li>
+			            <li>
+			            		<span class="price">¥<em class="price-num">80</em></span>
+			                <ul class="count initial">
+			                    <li><span class="num-jian"></span></li>
+			                    <li><input type="text"  class="input-num" maxlength="2" value="0" /></li>
+			                    <li><span class="num-jia">+</span></li>
+			                </ul>
+			            </li>
+					</ul>
+					<ul class="btn-numbox">
+			            <li class="label">
+			            		<span class="number">儿童票</span>
+			            		<b>12周岁以下</b>
+			            </li>
+			            <li>
+			            		<span class="price">¥<em class="price-num">50</em></span>
+			                <ul class="count initial">
+			                    <li><span class="num-jian"></span></li>
+			                    <li><input type="text" class="input-num" maxlength="2" value="0" /></li>
+			                    <li><span class="num-jia">+</span></li>
+			                </ul>
+			            </li>
+					</ul>
+                    -->
 				</div>
 				<div class="tickIntro">
 					<div class="title">票务须知</div>
@@ -64,10 +97,11 @@
 					</p>
 			   </div>
 			   
+
 			</div>
 		</div>
 		<div class="total">
-			<span class="fl">合计:<b id="totalNum">0</b>张&nbsp;&nbsp;&nbsp;需支付<b id="priceNum">0</b>元</span>
+			<span class="fl">合计:<b id="totalNum">10</b>张&nbsp;&nbsp;&nbsp;需支付<b id="priceNum">500</b>元</span>
 			<a id="confirmTicket" class="fr btn btn-grey" href="javascript:">确认订票</a>
 		</div>
 		<script type='text/javascript' src='../js/jquery-3.3.1.min.js' charset='utf-8'></script>
@@ -75,36 +109,40 @@
 		<script type='text/javascript' src="../js/common.js" charset='utf-8'></script>
 		<script type='text/javascript' src='../js/detail.js' charset='utf-8'></script>
 		<script>
-			 var num_jia = document.getElementById("num-jia");
-        var num_jian = document.getElementById("num-jian");
-        var input_num = document.getElementById("input-num");
+			var initailNumber = 0;
+			$(document).on("click",".num-jia",function(){
+				var pare = $(this).closest(".count");
+				var input_num = pare.find(".input-num");
+				var num = parseInt(input_num.val()) + 1;
+				input_num.val(num);
+				pare.removeClass("initial");
+	            pare.find(".num-jian").html("-");
+				initailNumber++;
+	            	$("#confirmTicket").removeClass("btn-grey").addClass("btn-black");
+	            	
+			});
+			$(document).on("click",".num-jian",function(){
+				var pare = $(this).closest(".count");
+				var input_num = pare.find(".input-num");
+				var num = parseInt(input_num.val());
+				if(num <= 0) {
+	                input_num.val(0);
+	           } else {
+	           		num--;
+		            input_num.val(num);
+		            initailNumber--;
+	                if(num==0) {
+	                		//console.log(pare.html());
+			            pare.addClass("initial");
+			            pare.find(".num-jian").html("");
+			            if(initailNumber==0) {
+			            		$("#confirmTicket").removeClass("btn-black").addClass("btn-grey");
+			            }
+	                }
+	            }
+					
+			});
 
-        num_jia.onclick = function() {
-			var num = parseInt(input_num.value) + 1;
-            input_num.value = num;
-            $("#totalNum").html(num);
-            $(".btn-numbox .count").removeClass("initial");
-            $("#num-jian").html("-");
-	        $("#confirmTicket").removeClass("btn-grey").addClass("btn-black");
-        }
-
-        num_jian.onclick = function() {
-
-            if(input_num.value <= 0) {
-                input_num.value = 0;
-            } else {
-            		var  num= parseInt(input_num.value) - 1;
-                input_num.value =num;
-                $("#totalNum").html(num);
-                if(input_num.value==0) {
-                	
-	            $(".btn-numbox .count").addClass("initial");
-	            $("#num-jian").html("");
-	            $("#confirmTicket").removeClass("btn-black").addClass("btn-grey")
-                }
-            }
-
-        }
 		</script>
 	</body>
 
