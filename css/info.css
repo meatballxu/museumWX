@@ -569,11 +569,12 @@ ul.artFace .info {
 	font-weight: bold;
 }
 .ticketlist .tick .footer {
-	height: 1rem;
+	min-height: 1rem;
 	font-size: 0.52rem;
 	color: #616161;
 	padding: 0 0.5rem;
 	line-height: 0.95rem;
+    overflow-y: auto;
 }
 #ticket1 .tick .footer,
 #ticket2 .tick .footer {
@@ -581,9 +582,17 @@ ul.artFace .info {
 }
 .ticketlist .tick .footer .date {
 	float: left;
+	width: 7rem;
 }
 .ticketlist .tick .footer .xzl {
 	float: right;
+	width: calc(100% - 7rem);
+	text-align: right;
+	 display:-webkit-box;
+
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
 }
 .tick-result {
 	background: #F5F5F5;
@@ -735,4 +744,11 @@ ul.artFace .info {
 }
 .calender-box  span.laydate-day-mark{
 	color: #FF0000;
+}
+.calender-box .layui-laydate-static {
+	width: 99%;
+}
+.calender-box .laydate-theme-molv .layui-laydate-main,
+.calender-box table {
+	width: 100%;
 }
