@@ -736,3 +736,39 @@ ul.artFace .info {
 .calender-box  span.laydate-day-mark{
 	color: #FF0000;
 }
+.calender-box td b.newicon {
+	position: absolute;
+    bottom: -5px;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+.calender-box .layui-laydate-static {
+	 width: 95%;
+}
+.calender-box .layui-laydate-content,
+.calender-box .laydate-theme-molv .layui-laydate-main,
+.calender-box table {
+    width: 100%;
+}
+.calender-box .layui-laydate-content td, 
+.calender-box .layui-laydate-content th {
+    padding: 5px 5px 10px;
+}
+.calender-box #layui-laydate1 .layui-this {
+	background: #FFFFFF!important;
+	position: relative;
+}
+.calender-box #layui-laydate1 .layui-this::before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 50%;
+	top: 50%;
+	margin-left: -10px;
+	margin-top: -10px;
+	background-color: #000000;
+}
