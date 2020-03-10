@@ -428,6 +428,9 @@ p {
 .ml20 {
 	margin-left: 20px;
 }
+.ml10 {
+	margin-left: 10px;
+}
 
 .mr10 {
 	margin-right: 10px;
@@ -477,9 +480,13 @@ p {
 	padding-left: 15px;
 }
 
+.h20 {
+	clear: both;
+	height: 0.6rem;
+}
 .h50 {
 	clear: both;
-	height: 1rem;
+	height: 0.7rem;
 }
 
 .h100 {
@@ -1490,6 +1497,7 @@ a.close:active {
 	padding-bottom: 25px;
 	text-align: center;
 	background: rgba(0, 0, 0, 0.5);
+	font-size: 0.75rem;
 }
 
 .popWin.success {

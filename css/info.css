@@ -387,12 +387,15 @@ ul.artFace .info {
 }
 .ticket-container .tabs-nav {
 	font-size: 0;
-    height: 1.2rem;
-}.ticket-container .tabs-nav.fix{
-	height: 2.1rem;
+    height: 2.25rem;
+    border-radius: 0.2rem;
+}
+.ticket-container .tabs-nav.fix {
+    border-radius: 0;
+    padding-top: 0rem;
 }
 .ticket-container .tabs-nav>a {
-    height: 1.18rem;
+    height: 1.8rem;
     }
 .ticket-container .tabs-nav a {
 	width: 33.33%;
@@ -405,7 +408,9 @@ ul.artFace .info {
 	position: relative;
 	display: inline-block;
 	height: 100%;
+	line-height: 2.2rem;
 	font-size: 0.65rem;
+    font-weight: 400;	
 }
 .ticket-container .tabs-nav a.on font:after {
     width: 100%;
@@ -414,12 +419,13 @@ ul.artFace .info {
     content: "";
     position: absolute;
     width: 0;
-    height: 0.1rem;
-    background: #1A1A1A;
+    height: 3px;
+    background: #2196f3;
     left: 0;
     bottom: 0;
     -webkit-transition: all .5s;
     transition: all .5s;
+    transform: scaleY(0.5);
 }
 .ticketlist .tick {
 	cursor: pointer;
@@ -609,6 +615,9 @@ overflow: hidden;
 	text-align: center;
 	padding: 1rem 1rem 0;
 }
+.tick-result p:only-child {
+	padding: 0 1rem 0;
+}
 .tick-result p a {
 	color:#E51438;
 	text-decoration: underline;
@@ -746,7 +755,7 @@ overflow: hidden;
 	color: #FF0000;
 }
 .calender-box .layui-laydate-static {
-	width: 99%;
+	width: 100%;
 }
 .calender-box .laydate-theme-molv .layui-laydate-main,
 .calender-box table {

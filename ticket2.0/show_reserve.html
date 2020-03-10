@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+	<html lang="zh-CN">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>谢子龙影像艺术馆</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../css/common2.css">
+		<link rel="stylesheet" href="../css/detail.css">
+		<link rel="stylesheet" href="../css/show.css">
+		<link rel="stylesheet" href="../css/info.css">
+	</head>
+	<body class="ticketInfo">
+		<div class="main-container ticket-container">
+			<div class="detailBox">
+				<div class="bannerimg" style="background-image:url(../img/academic/academic0.jpg) ;">
+					<div>—— <span>展览标题展览标题展览标题</span></div>
+				</div>
+				<div class="h50"></div>
+				<div class="topicText">1）请选择参观的日期</div>
+				<div id="calender-box" class="calender-box"></div>
+				<div class="topicText">
+					2）请选择参观时间
+					<div class="fr">
+						<span class="able">可预约</span>
+						<span class="disable">不可预约</span>
+					</div>
+				</div>
+				<div class="time-box" style="display: none;">
+					未选择日期
+				</div>
+				<div class="time-box">
+					<div class="disable	">
+						<a href="javascript:">上午<span>（已约满）</span></a>
+					</div><div class="able">
+						<a href="javascript:">下午<span>（可以预约）</span></a>
+					</div>
+				</div>
+				<div class="getReserve">
+					<a class="btn btn-black btn-block disabled" href="reserve_success.html">确认预约</a>
+				</div>
+				
+			</div>
+		</div>
+		<script type='text/javascript' src='../js/jquery-3.3.1.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/bootstrap.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src="../js/laydate/laydate.js"></script> 
+		<script type='text/javascript' src="../js/common.js" charset='utf-8'></script>
+		<script type='text/javascript' src='../js/detail.js' charset='utf-8'></script>
+		<script>
+			//执行一个laydate实例
+			laydate.render({
+			  elem: '#calender-box',
+			  position: 'static',
+			  theme: '#1A1A1A',
+			  showBottom: false,
+			  min: 0,
+			  max: 30,//可选值是第二天往后的30天内 
+			  mark: {
+			    '2020-3-7': '无票',
+			    '2020-3-9': '无票',
+			    '2020-3-10': '无票',
+			    '2020-3-15': '无票',
+			    '2020-3-16': '无票'
+			  }
+			});
+			
+			$(".orderTicket .btn-black").click(function(){
+				$(".black-layer,.ticket-layer").slideDown();
+			});
+			$(".ticket-layer .layer_close,.black-layer").click(function(){
+				$(".black-layer,.ticket-layer").fadeOut();
+			});
+			
+			$(".time-box > div").click(function() {
+				if($(this).hasClass("able")) {
+					if($(this).hasClass("on")) {
+						$(this).removeClass("on");
+						$(".getReserve .btn").addClass("disabled");
+					}else {
+						$(".time-box > div").removeClass("on");
+						$(this).addClass("on");
+						$(".getReserve .btn").removeClass("disabled");
+					}
+				}else {
+					callPop(1,"请另选时间")
+				}
+			});
+			
+			
+		</script>
+	</body>
+</html>

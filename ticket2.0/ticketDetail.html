@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="bg-grey">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>谢子龙影像艺术馆</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../css/common2.css">
+		<link rel="stylesheet" href="../css/detail.css">
+		<link rel="stylesheet" href="../css/show.css">
+		<link rel="stylesheet" href="../css/info.css">
+	</head>
+
+	<body class="bg-grey">
+		<div class="detail-top">我的订票信息</div>
+		<div class="orderTicket">
+			<a class="btn btn-black" href="showInfo.html">查看展览详情</a>
+		</div>
+		<div class="coupon-detail">
+			<div class="tit">展览名称展览名称展览名称展览名称</div>
+			<div class="orcode">
+				<img src="../img/login/orcode.jpg" />
+			</div>
+			<dl>
+				<dt>预约看展时间</dt>
+				<dd>
+					<span class="tRed bold">2020/02/10 下午</span>
+				</dd>	
+			</dl>
+			<div class="cgReserv">
+				<a id="editReserv" class="btn btn-black btn-xs ml10" href="javascript:">更改预约时间</a>
+				<a class="btn btn-black btn-xs ml10 disabled" href="javascript:">已更改过，无法再次更改</a>
+			</div>
+			<dl>
+				<dt>订票时间</dt>
+				<dd>2018/09/10 16:12:23</dd>
+			</dl>
+			<dl>
+				<dt>订票编号</dt>
+				<dd>12323123231232312323</dd>
+			</dl>
+			<dl>
+				<dt>有效时间</dt>
+				<dd>2019-12-31 至 2019-12-31</dd>
+			</dl>
+			<dl>
+				<dt>看展地址</dt>
+				<dd>详细地址详细地址详细地址详细地址详细地址详细地址</dd>
+			</dl>
+			<dl>
+				<dt>联系电话</dt>
+				<dd>0731-32323213</dd>
+			</dl>
+
+		</div>
+		<div class="coupon-intro coupon-info">
+			<div class="tit">使用说明</div>
+			<p>观展前出示此券，一人一票，逾期作废。</p>
+		</div>
+		<div id="win_confirm" class='modalBox' style="display: none;">
+			<div class='black-layer close-win'></div>
+			<div class='popModal'>
+				<div class='popModal-inner'>
+					<div class='popModal-title'>更改预约提示</div>
+					<div class='popModal-text'>仅能更改一次，完成后无法再次更改</div>
+				</div>
+				<div class='popModal-buttons btl'>
+					<span id="gotoreserve" class='popModal-button popModal-button-bold'>前往更改</span><span class='popModal-button popModal-button-bold popModal-button-grey close-win'>返回</span>
+				</div>
+			</div>
+		</div>
+		<div class="h100"></div>
+		<script type='text/javascript' src='../js/jquery-3.3.1.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/bootstrap.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src="../js/common.js" charset='utf-8'></script>
+		<script type='text/javascript' src='../js/detail.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/ticket.js' charset='utf-8'></script>
+		<script>
+			$("#editReserv").click(function() {
+				$("#win_confirm").fadeIn();
+			})
+
+			$("#gotoreserve").click(function() {
+				window.location.href = "show_reserve.html"
+			})
+			$(".close-win").click(function() {
+				$("#win_confirm").fadeOut();
+			})
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="bg-grey">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>谢子龙影像艺术馆</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="../css/common2.css">
+		<link rel="stylesheet" href="../css/detail.css">
+		<link rel="stylesheet" href="../css/show.css">
+		<link rel="stylesheet" href="../css/info.css">
+	</head>
+
+	<body class="bg-grey">
+		<!--<div class="bg-top"></div>-->
+		<div class="space-top"></div>
+		<div class="logo-top logo-top-white"></div>
+		<div class="main-container ticket-container ticket-list">
+			<div class="tabs-nav mt10">
+				<a class="ma5 on" href="javascript:" data-tar="ticket0">
+					<font>未使用</font>
+				</a>
+				<a class="ma5" href="javascript:" data-tar="ticket1">
+					<font>已使用</font>
+				</a>
+				<a class="ma5" href="javascript:" data-tar="ticket2">
+					<font>已过期</font>
+				</a>
+			</div>
+			<div class="tabs-content">
+				<div class="h20"></div>
+				<!-- 未使用 -->
+				<div class="ct current" id="ticket0">
+					<div class="ticketlist">
+						<div class="a_tick">
+							<div>
+							  <a href="showInfo.html">
+							  	<div class="face" style="background-image: url(../img/index/ba3.jpg);"></div>
+							  </a>
+							</div>
+							<div>
+							  <a href="ticketDetail.html">
+								<div class="tit">展览标题展览标题展览标题展览标题</div>
+								<div class="det">预约时间：2020.02.02</div>
+								<div class="lim">谢子龙艺术馆</div>
+							  </a>
+							</div>
+							<div>
+								
+								<a class="btn btn-primary" href="ticketDetail.html">查看</a>
+							</div>
+						</div>
+						<div class="a_tick">
+							<div>
+							  <a href="showInfo.html">
+							  	<div class="face" style="background-image: url(../img/academic/academic0.jpg);"></div>
+							  </a>
+							</div>
+							<div>
+							  <a href="ticketDetail.html">
+								<div class="tit">展览标题展览标题展览标题展览标题</div>
+								<div class="det or">未预约，请尽快预约</div>
+								<div class="lim">谢子龙艺术馆</div>
+							  </a>
+							</div>
+							<div>
+								
+								<a class="btn btn-orange" href="show_reserve.html">去预约</a>
+							</div>
+						</div>
+						<div class="a_tick">
+							<div>
+							  <a href="showInfo.html">
+								<div class="face" style="background-image: url(../img/ticket/ep-1.png);"></div>
+							  </a>
+							</div>
+							<div>
+							  <a href="ticketDetail.html">
+								<div class="tit">展览标题展览标题展览标题展览标题</div>
+								<div class="det or">未预约，请尽快预约</div>
+								<div class="lim">谢子龙艺术馆</div>
+							  </a>
+							</div>
+							<div>
+								
+								<a class="btn btn-orange" href="ticketDetail.html">去预约</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 已使用 -->
+				<div class="ct" id="ticket1" style="display: none;">
+					<div class="ticketlist">
+						<div class="a_tick">
+							<div>
+							  <a href="showInfo.html">
+								<div class="face" style="background-image: url(../img/ticket/ep-1.png);"></div>
+							  </a>
+							</div>
+							<div>
+							  <a href="showInfo.html">
+								<div class="tit">展览标题展览标题展览标题展览标题</div>
+								<div class="det gr">2018.04.29 - 2018.06.10</div>
+								<div class="lim">谢子龙影像艺术馆</div>
+							  </a>
+							</div>
+							<div>
+								<a class="btn btn-grey" href="ticket_detail.html">已使用</a>
+							</div>
+						</div>
+						
+					</div>
+
+				</div>
+				<!-- 已过期 -->
+				<div class="ct" id="ticket2" style="display: none;">
+					<div class="ticketlist">
+						<div class="a_tick">
+							<div>
+							  <a href="showInfo.html">
+								<div class="face" style="background-image: url(../img/ticket/ep-1.png);"></div>
+							  </a>
+							</div>
+							<div>
+							  <a href="showInfo.html">
+								<div class="tit">展览标题展览标题展览标题展览标题</div>
+								<div class="det gr">2018.04.29 - 2018.06.10</div>
+								<div class="lim">谢子龙影像艺术馆</div>
+							  </a>
+							</div>
+							<div>
+								<a class="btn btn-grey" href="ticket_detail.html">已过期</a>
+							</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="orLayer" style="display: none;">
+			<a class="close" href="javascript:">&times;</a>
+			<h1>展览标题展览标题展览标题</h1>
+			<img src="../img/ticket/or.png" />
+			<h2>凭二维码检票入场，一人一票，一次入场有效</h2>
+		</div>
+		<script type='text/javascript' src='../js/jquery-3.3.1.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/bootstrap.min.js' charset='utf-8'></script>
+		<script type='text/javascript' src="../js/common.js" charset='utf-8'></script>
+		<script type='text/javascript' src='../js/detail.js' charset='utf-8'></script>
+		<script type='text/javascript' src='../js/ticket.js' charset='utf-8'></script>
+
+	</body>
+
+</html>
