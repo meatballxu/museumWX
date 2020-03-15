@@ -727,6 +727,7 @@ p {
 html.bg-grey,
 body.bg-grey {
 	height: auto;
+	min-height: 100%;
 	background: #F6F6F6;
 }
 
