@@ -962,3 +962,10 @@ dl dd.price> span:first-child {
 dl dd.price> span:last-child {
 	color: #333333;
 }
+
+.total + .h100 {
+	height: 2.1rem;
+}
+.total + .h100 + .h100 {
+	display: none;
+}
