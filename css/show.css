@@ -645,6 +645,9 @@ p {
 	width: 50%;
 	cursor: pointer;
 }
+.time-box>div:only-child {
+	width: 100%;
+}
 
 .time-box a>span {
 	font-size: 0.65rem;
@@ -789,12 +792,14 @@ body.bg-grey {
 .a_tick .tit {
 	font-size: 0.75rem;
 	color: rgba(0, 0, 0, 1);
-	line-height: 1;
+	line-height: 1.4;
+	margin-top: -0.1rem;
+	height: 1rem;
 }
 
 .a_tick .det {
 	font-size: 0.65rem;
-	padding-top: 0.6rem;
+	padding-top: 0.4rem;
 	color: #0570c6;
 }
 .a_tick .det.or {
@@ -807,7 +812,7 @@ body.bg-grey {
 .a_tick .lim {
 	font-size: 0.5rem;
 	color: #999999;
-	padding-top: 0.35rem;
+	padding-top: 0.31rem;
 }
 
 .a_tick .btn {
