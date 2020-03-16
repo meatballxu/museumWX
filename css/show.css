@@ -631,22 +631,25 @@ p {
 .time-box {
 	border: 1px solid #e2e2e2;
 	margin-top: 0.5rem;
-	height: 2.5rem;
 	text-align: center;
-	line-height: 2.5rem;
+	line-height: 1.9rem;
 	font-size: 0.75rem;
 }
 
 .time-box>div {
-	display: inline-block;
-	height: 2.5rem;
-	line-height: 2.5rem;
+	display: block;
+	height: 1.9rem;
+	line-height: 1.9rem;
 	font-size: 0.75rem;
-	width: 50%;
+	text-align: center;
 	cursor: pointer;
+}
+.time-box>div:first-child {
+	border-bottom: 1px #e2e2e2 solid;
 }
 .time-box>div:only-child {
 	width: 100%;
+	border-bottom:none;
 }
 
 .time-box a>span {
@@ -654,7 +657,8 @@ p {
 }
 
 .time-box a::before {
-	top: 1.1rem;
+	top: 50%;
+	margin-top: -0.2rem;
 }
 
 .time-box .able a {
@@ -667,6 +671,18 @@ p {
 
 .time-box>div.on {
 	background-color: #2196f3;
+	height: 2.5rem;
+	line-height: 2.5rem;
+}
+.time-box .on a::after {
+	content: "";
+	display: inline-block;
+	width: 0.45rem;
+	height: 0.8rem;
+	transform: rotate(40deg) translateY(-0.2rem);
+	-webkit-transform: rotate(40deg) translateY(-0.2rem);
+	border-right: 2px solid #FFFFFF;
+	border-bottom: 2px solid #FFFFFF;
 }
 
 .time-box>div.on a {
