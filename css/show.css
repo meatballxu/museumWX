@@ -940,8 +940,31 @@ body.bg-grey {
 	display: inline-block;
 	cursor: pointer;
 }
+.popModal-buttons.btl .popModal-button:only-child {
+	width: 100%;
+}
+.popModal-buttons.btl .popModal-button.btn-red {
+	background: #c4080a;
+	font-weight: bold;
+}
 .popModal-buttons.btl .popModal-button.popModal-button-grey {
 	background-color: #d1d1d1;
+	color: #333333;
+}
+#win_confirm_reserve .popModal {
+    margin-top: -9rem;
+}
+#win_confirm_reserve .popModal-inner {
+    padding-bottom: 0.6rem;
+}
+.reserve-info {
+	border-top: 1px solid #E0E0E0;
+	padding: 0.7rem 0 0;
+	text-align: left;
+}
+.reserve-info p {
+	font-size: 0.65rem;
+	margin-bottom: 0.3rem;
 	color: #333333;
 }
 .bannerimg {

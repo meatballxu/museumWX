@@ -39,17 +39,49 @@
 					</div>
 				</div>
 				<div class="getReserve">
-					<a class="btn btn-black btn-block disabled" href="reserve_success.html">确认预约</a>
+					<a id="reserve" class="btn btn-black btn-block disabled" href="javascript:">确认预约</a>
 				</div>
 				
 			</div>
 		</div>
+		
+		<div id="win_confirm_reserve" class='modalBox' style="display: none;">
+			<div class='black-layer close-win'></div>
+			<div class='popModal'>
+				<div class='popModal-inner'>
+					<div class='popModal-title'>预约须知</div>
+					<div class='popModal-text'>
+						<div class="reserve-info">
+							<p>1.为避免人流过于密集，在疫情防控期间，将采取入馆人员限流措施：目前仅接受散客（个人）预约，每日总限额1000人（10:00—14:00  500人；14:00—17:30  500人）。</p>
+							<p>2.入馆参观预约凭证非展览门票，观众如参观展览请现场自行购买展览门票。</p>
+							<p>3.请合理安排时间，准时前往。</p>
+							<p>4.若预约过程有任何疑问，请拨打0731—88991518（周二—周日 9:30—18:00）</p>
+							<p>感谢您的理解，祝您参观愉快！</p>
+						</div>
+					</div>
+				</div>
+				<div class='popModal-buttons btl'>
+					<span id="gotosuccess" class='popModal-button btn-red'>知道了</span>
+				</div>
+			</div>
+		</div>
+		
 		<script type='text/javascript' src='../js/jquery-3.3.1.min.js' charset='utf-8'></script>
 		<script type='text/javascript' src='../js/bootstrap.min.js' charset='utf-8'></script>
 		<script type='text/javascript' src="../js/laydate/laydate.js"></script> 
 		<script type='text/javascript' src="../js/common.js" charset='utf-8'></script>
 		<script type='text/javascript' src='../js/detail.js' charset='utf-8'></script>
 		<script>
+			$("#reserve").click(function() {
+				$("#win_confirm_reserve,.black-layer").fadeIn();
+			})
+
+			$("#gotosuccess").click(function() {
+				window.location.href = "reserve_success.html"
+			})
+			$(".close-win").click(function() {
+				$("#win_confirm_reserve,.black-layer").fadeOut();
+			})
 			//执行一个laydate实例
 			laydate.render({
 			  elem: '#calender-box',
